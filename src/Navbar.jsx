@@ -1,0 +1,16 @@
+import React from 'react'
+import styles from './Header.module.css';
+import { Link } from 'react-router-dom'
+
+export default () => 
+(
+<div className={styles.Header}>
+    <h1>Kovács Gergő</h1>
+    <ul>
+        <li> <Link to="/">Home</Link></li>
+        <li> <Link to="/about">About Me</Link></li>
+        <li> <Link to="/work">Work</Link></li>
+        <li> <Link to="/references">References</Link></li>
+    </ul>
+  </div>)
+      
