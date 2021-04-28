@@ -1,7 +1,29 @@
-.error {
-    color: red;
-  }
+.Header {
+    padding-top: 1em;
+    color: white;
+    background-color: blueviolet;
+}
 
-  .Header {
-      color: blueviolet;
-  }
+.Header ul {
+    padding-left: 10em;
+    padding-right: 10em;
+    display:table;
+    width: max-content;
+    height: max-content;
+}
+
+.Header ul a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display:table-cell;
+}
+
+.Header ul li {
+    display:table-cell;
+}
+
+.Header ul a:hover {
+    color: darkmagenta;
+    background-color: violet;
+}

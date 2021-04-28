@@ -9,7 +9,6 @@ export default () =>
     <ul>
         <li> <Link to="/">Home</Link></li>
         <li> <Link to="/about">About Me</Link></li>
-        <li> <Link to="/work">Work</Link></li>
         <li> <Link to="/references">References</Link></li>
     </ul>
   </div>)
