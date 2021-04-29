@@ -10,15 +10,15 @@ import Navbar from './Navbar';
 function App() {
   return (
     <main className="App">
-      <Navbar/>
+      <Navbar />
       <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/about" component={About} />
-          <Route path="/work" component={Work} />
-          <Route path="/references" component={References} />
-          <Route component={Error} />
+        <Route path="/ReactCV/" component={Home} exact />
+        <Route path="/ReactCV/about" component={About} />
+        <Route path="/ReactCV/work" component={Work} />
+        <Route path="/ReactCV/references" component={References} />
+        <Route component={Error} />
       </Switch>
-     </main>
+    </main>
   );
 }
 
