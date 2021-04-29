@@ -1,15 +1,17 @@
 .Header {
     padding-top: 1em;
     color: white;
-    background-color: blueviolet;
+    background-color: #1F0322;
+    margin: 0;
 }
 
 .Header ul {
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 0;
+    padding-right: 0;
     display:table;
     width: max-content;
     height: max-content;
+    margin: auto;
 }
 
 .Header ul a {
@@ -24,6 +26,6 @@
 }
 
 .Header ul a:hover {
-    color: darkmagenta;
-    background-color: violet;
+    color: #DA4167;
+    background-color: #8A1C7C;
 }

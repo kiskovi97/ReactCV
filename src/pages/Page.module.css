@@ -1,0 +1,28 @@
+.page {
+    height: max-content;
+    min-height: 90vh;
+    margin: 0;
+    text-align: left;
+    background-color: #8A1C7C;
+    color: #8499B1;
+}
+
+.page .onepage {
+    background-color: #8A1C7C;
+    color: #8499B1;
+    padding: 3em;
+}
+
+.page .otherpage {
+    background-color: #5DB7DE;
+    color: #1F0322;
+    padding: 3em;
+}
+
+.otherpage h2,.otherpage h1,.otherpage h3 {
+    color: #8A1C7C;
+}
+
+.onepage h2, .onepage h1,.onepage h3 {
+    color: #5DB7DE;
+}
