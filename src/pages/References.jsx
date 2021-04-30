@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './Page.module.css'
 import Project from './Components/Project'
+import bme from './bme.png'
+import android from './android.png'
+import unity from './unity.png'
 
 var projects = [
     {
@@ -30,7 +33,19 @@ var projects = [
         +"This city is generated from scratch. Only textures and vehicle modells were given. The finished city contains moving vehicles like cars or trams.",
         github: "https://github.com/kiskovi97/ProceduralCity",
         pdf: "https://diplomaterv.vik.bme.hu/en/Theses/Proceduralisan-generalt-varos-Unity",
-    }
+    },
+    {
+        title : "Marching Cube Project",
+        details: "This is a project where I tested my compute shader abilities. I made a Marching Cube algorithm and applyed to a \"water simulation\" and a map generation.",
+        github: "https://github.com/kiskovi97/WaterBending",
+    },
+    {
+        title : "Rewind man",
+        details: "This game was made for an University project. I inspired by the game Braid and implemented its basic rules in Unity (The player can rewind time). "
+        +"I had to make a deterministic phyics simulation to work around the memoryheavy timecontroling mechanincs."
+        +"The finished product was a nice multilevel puzle platformer that challenged my testers thinking abalities.",
+        github: "https://github.com/kiskovi97/RewindMan",
+    },
 ]
 
 var References = () => 
@@ -41,16 +56,25 @@ var References = () =>
             <Project proj = {projects[1]}/>
         </div>
         <div>
-            Android Logo
+            <img src={android}  alt="" className={styles.logo}/>
         </div>
     </div>
     <div>
         <div>
-            BME Thesis
+            <img src={bme}  alt="" className={styles.logo}/>
         </div>
         <div>
             <Project proj = {projects[2]}/>
             <Project proj = {projects[3]}/>
+        </div>
+    </div>
+    <div>
+        <div>
+            <Project proj = {projects[4]}/>
+            <Project proj = {projects[5]}/>
+        </div>
+        <div>
+            <img src={unity}  alt="" className={styles.logo}/>
         </div>
     </div>
 </div>
