@@ -1,0 +1,8 @@
+.links > div {
+    display: inline;
+    padding: 0.5em;
+}
+
+.details {
+    padding: 0.5em;
+}

@@ -1,5 +1,57 @@
 import React from 'react'
 import styles from './Page.module.css'
+import Project from './Components/Project'
 
-var References = () => <div className={styles.page}> These are my references </div>
+var projects = [
+    {
+        title : "Deeper and Deeper - Android game",
+        details: "This is an infinty runner type game, with Unity URP and 2D lighting. The graphics is 2D pixel art made by me.",
+        github: "https://github.com/kiskovi97/DeeperAndDeeper",
+        android: "https://play.google.com/store/apps/details?id=com.igorodcavok.DeeperAndDeeper",
+    },
+    {
+        title : "Johnny Run - Android game",
+        details: "This is an infinty runner type game, made with Unity. The graphics was made by me, and the project was made with my dear friend Dorogi-Kovács Gábor. "
+        +"This was out first game out in play store, but sadly the project was abondend after a year and the game was shut down by Play Store.",
+        github: "https://github.com/kiskovi97/DorogiRun",
+    },
+    {
+        title : "Crowd Simulation with Unity DOTS",
+        details: "This was my master's thesis of Budapest University of Technology and Economics"
+        +" Crowd Simulation with Unity, using the Unity ECS packages."
+        +" I worked on this project for 2 semesters and made a youtube video series explaining it to others. ",
+        github: "https://github.com/kiskovi97/CrowdSimulation",
+        youtube: "https://www.youtube.com/playlist?list=PL-FEATMhJjKamIhMB4SInM8KcGNZl_5ow",
+        pdf: "https://diplomaterv.vik.bme.hu/hu/Theses/Tomeg-szimulacio-Unity-keretrendszer",
+    },
+    {
+        title : "Procedurally generated virtual city",
+        details: "The subject of my thesis is creating procedurally generated virtual cities using Unity engine."
+        +"This city is generated from scratch. Only textures and vehicle modells were given. The finished city contains moving vehicles like cars or trams.",
+        github: "https://github.com/kiskovi97/ProceduralCity",
+        pdf: "https://diplomaterv.vik.bme.hu/en/Theses/Proceduralisan-generalt-varos-Unity",
+    }
+]
+
+var References = () => 
+<div className={styles.page}> 
+    <div>
+        <div>
+            <Project proj = {projects[0]}/>
+            <Project proj = {projects[1]}/>
+        </div>
+        <div>
+            Android Logo
+        </div>
+    </div>
+    <div>
+        <div>
+            BME Thesis
+        </div>
+        <div>
+            <Project proj = {projects[2]}/>
+            <Project proj = {projects[3]}/>
+        </div>
+    </div>
+</div>
 export default References

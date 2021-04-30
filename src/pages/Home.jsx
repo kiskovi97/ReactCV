@@ -1,12 +1,13 @@
 
 import React from 'react'
 import styles from './Page.module.css'
-import image from '../profile.png'
+import image from '../profile_glasses.png'
 
-var Home = () => <div className={styles.page}>
-    <div className={styles.onepage}>
+var Home = () => 
+<div className={styles.page}>
+    <div>
         <div>
-            <img src={image} alt="" />
+            <img src={image} alt="" className={styles.person} />
         </div>
         <div>
             <h2>Kovács Gergő</h2>
@@ -16,7 +17,7 @@ var Home = () => <div className={styles.page}>
             <div>https://www.instagram.com/kiskovi9706/</div>
         </div>
     </div>
-    <div className={styles.otherpage}>
+    <div>
         <div>
             <h3>Hey visiter</h3>
             <div>I am a softwere Engineer. I work mostly with unity, but as you see I know some basic React too</div>
