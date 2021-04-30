@@ -12,10 +12,10 @@ function App() {
     <main className="App">
       <Navbar />
       <Switch>
-        <Route path="/ReactCV/" component={Home} exact />
-        <Route path="/ReactCV/about" component={About} />
-        <Route path="/ReactCV/work" component={Work} />
-        <Route path="/ReactCV/references" component={References} />
+        <Route exact path="/" component={Home}  />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/work" component={Work} />
+        <Route exact path="/references" component={References} />
         <Route component={Error} />
       </Switch>
     </main>
