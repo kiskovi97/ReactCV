@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.18f7a28e.chunk.css",
-    "main.js": "/ReactCV/static/js/main.40ea8b01.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.40ea8b01.chunk.js.map",
+    "main.js": "/ReactCV/static/js/main.fe81deab.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.fe81deab.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.eb569131.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.eb569131.js.map",
     "static/js/2.34807d4b.chunk.js": "/ReactCV/static/js/2.34807d4b.chunk.js",
@@ -14,13 +14,13 @@
     "static/js/2.34807d4b.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.34807d4b.chunk.js.LICENSE.txt",
     "static/media/bme.b1214528.png": "/ReactCV/static/media/bme.b1214528.png",
     "static/media/bookr_logo.14f78359.png": "/ReactCV/static/media/bookr_logo.14f78359.png",
-    "static/media/profile_glasses.3c8c764c.png": "/ReactCV/static/media/profile_glasses.3c8c764c.png",
+    "static/media/profile_glasses.cbfacc57.png": "/ReactCV/static/media/profile_glasses.cbfacc57.png",
     "static/media/unity.b6e5e6ec.png": "/ReactCV/static/media/unity.b6e5e6ec.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eb569131.js",
     "static/js/2.34807d4b.chunk.js",
     "static/css/main.18f7a28e.chunk.css",
-    "static/js/main.40ea8b01.chunk.js"
+    "static/js/main.fe81deab.chunk.js"
   ]
 }
