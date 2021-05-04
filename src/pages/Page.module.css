@@ -17,7 +17,8 @@
 .page > div > div {
     margin: auto;
     height: min-content;
-    max-width: 30em;
+    max-width: 50em;
+    position: relative;
 }
 
 .page > div:nth-child(odd){
