@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.18f7a28e.chunk.css",
-    "main.js": "/ReactCV/static/js/main.fe81deab.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.fe81deab.chunk.js.map",
+    "main.css": "/ReactCV/static/css/main.8eb7b4fb.chunk.css",
+    "main.js": "/ReactCV/static/js/main.c1c69764.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.c1c69764.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.eb569131.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.eb569131.js.map",
-    "static/js/2.34807d4b.chunk.js": "/ReactCV/static/js/2.34807d4b.chunk.js",
-    "static/js/2.34807d4b.chunk.js.map": "/ReactCV/static/js/2.34807d4b.chunk.js.map",
+    "static/js/2.db13738f.chunk.js": "/ReactCV/static/js/2.db13738f.chunk.js",
+    "static/js/2.db13738f.chunk.js.map": "/ReactCV/static/js/2.db13738f.chunk.js.map",
     "static/js/3.791dca70.chunk.js": "/ReactCV/static/js/3.791dca70.chunk.js",
     "static/js/3.791dca70.chunk.js.map": "/ReactCV/static/js/3.791dca70.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "static/css/main.18f7a28e.chunk.css.map": "/ReactCV/static/css/main.18f7a28e.chunk.css.map",
-    "static/js/2.34807d4b.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.34807d4b.chunk.js.LICENSE.txt",
+    "static/css/main.8eb7b4fb.chunk.css.map": "/ReactCV/static/css/main.8eb7b4fb.chunk.css.map",
+    "static/js/2.db13738f.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.db13738f.chunk.js.LICENSE.txt",
+    "static/media/City.6a2666f5.png": "/ReactCV/static/media/City.6a2666f5.png",
+    "static/media/Crowd.8b39f203.png": "/ReactCV/static/media/Crowd.8b39f203.png",
+    "static/media/Deeper.f8eca7eb.png": "/ReactCV/static/media/Deeper.f8eca7eb.png",
+    "static/media/Johny.dc7fce32.png": "/ReactCV/static/media/Johny.dc7fce32.png",
     "static/media/bme.b1214528.png": "/ReactCV/static/media/bme.b1214528.png",
     "static/media/bookr_logo.14f78359.png": "/ReactCV/static/media/bookr_logo.14f78359.png",
     "static/media/profile_glasses.cbfacc57.png": "/ReactCV/static/media/profile_glasses.cbfacc57.png",
@@ -19,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eb569131.js",
-    "static/js/2.34807d4b.chunk.js",
-    "static/css/main.18f7a28e.chunk.css",
-    "static/js/main.fe81deab.chunk.js"
+    "static/js/2.db13738f.chunk.js",
+    "static/css/main.8eb7b4fb.chunk.css",
+    "static/js/main.c1c69764.chunk.js"
   ]
 }
