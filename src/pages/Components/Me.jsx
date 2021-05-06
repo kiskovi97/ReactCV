@@ -14,8 +14,10 @@ var Me = () =>
     <div className={gStyles.grid}>
         <div className={styles.titleBlock}>
             <div className={styles.frontTitle}>
-                <ScrollAnimation className={styles.title} animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce>
-                    Kovács Gergő
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce offset="20">
+                    <div className={styles.title} >
+                        Kovács Gergő
+                    </div>
                 </ScrollAnimation>
                 <ScrollAnimation className={styles.logos} animateIn="fadeInLeft" animateOut="fadeOutLeft" offset="180" animateOnce>
                     <a href="https://www.instagram.com/kiskovi9706/" className={pStyles.minilogo}><img src={insta} alt=""/></a>
