@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './Page.module.css'
 import Me from './Components/Me'
-import work from '../bookr_logo.png'
 import gStyles from './Grid.module.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import {Bookr} from './Icons'
 
 var About = () => 
 <div className={styles.page}> 
@@ -17,7 +17,9 @@ var About = () =>
             <div>2018 - 2019 Atoldev - java developer</div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
-            <img src={work}  alt="" className={styles.logo}/>
+            <div className={styles.logo}>
+                <Bookr />
+            </div>
         </ScrollAnimation>
     </div>
 </div>

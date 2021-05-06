@@ -1,3 +1,6 @@
+@value colors: "../colors.css";
+@value primarydark, primarylight, secondarydark, secondarylight, dark from colors;
+
 .person {
     height: 30em;
     width: 30em;
@@ -22,7 +25,7 @@
 .title {
     font-size: 7em;
     font-weight: bold;
-    color: #5DB7DE;
+    color: secondarylight;
     filter: drop-shadow(4px 5px 10px rgba(34, 34, 34, 0.7));
     line-height: 1em;
     margin-bottom: 0.5em;

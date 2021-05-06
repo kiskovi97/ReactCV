@@ -16,7 +16,20 @@
 }
 
 .page > div:nth-child(odd) a{
-    color: primarylight;
+    color: white;
+}
+
+
+.page > div:nth-child(odd) .logo svg path, .page > div:nth-child(odd) .logo svg line, .page > div:nth-child(odd) .logo svg polyline, .page > div:nth-child(odd) .logo svg polygon{
+    fill: secondarylight;
+    color: secondarylight;
+    stroke: secondarylight;
+}
+
+.page > div:nth-child(even) .logo svg path, .page > div:nth-child(even) .logo svg line, .page > div:nth-child(even) .logo svg polyline, .page > div:nth-child(even) .logo svg polygon{
+    fill: primarydark;
+    color: primarydark;
+    stroke: primarydark;
 }
 
 .page > div:nth-child(odd) h2, .page > div:nth-child(odd) h1,.page > div:nth-child(odd) h3 {
@@ -35,7 +48,7 @@
 }
 
 .page > div:nth-child(even) a{
-    color: dark;
+    color: black;
 }
 
 .page > div {
@@ -52,11 +65,12 @@ img.minilogo, .minilogo img {
     filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.315));
 }
 
-.logo, .logo img {
+.logo, .logo img, .logo svg {
     height: 20em;
     width: 20em;
     object-fit: scale-down;
 }
+
 
 @media only screen and (max-width: 800px) {
 

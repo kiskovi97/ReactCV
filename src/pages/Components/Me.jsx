@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Me.module.css'
-import image from '../../images/profile_glasses.png'
+import image from '../../images/profile_yellow.png'
 import gStyles from '../Grid.module.css'
 import pStyles from '../Page.module.css'
 

@@ -2,9 +2,7 @@ import React from 'react'
 import styles from './Page.module.css'
 import gStyles from './Grid.module.css'
 import Project from './Components/Project'
-import bme from '../logos/bme.png'
-import android from '../logos/android.png'
-import unity from '../logos/unity.png'
+import {Unity, Android, BME} from './Icons'
 import city from '../images/City.png'
 import crowd from '../images/Crowd.png'
 import deeper from '../images/Deeper.png'
@@ -67,13 +65,17 @@ var References = () =>
             </div>
             <div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                    <img src={android} alt="" className={styles.logo} />
+                <div className={styles.logo}>
+                    <Android />
+                </div>
                 </ScrollAnimation>
             </div>
         </div>
         <div className={gStyles.grid}>
             <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                <img src={bme} alt="" className={styles.logo} />
+                <div className={styles.logo}>
+                    <BME />
+                </div>
             </ScrollAnimation>
             <div>
                 <Project proj={projects[2]} />
@@ -86,7 +88,9 @@ var References = () =>
                 <Project proj={projects[5]} />
             </div>
             <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                <img src={unity} alt="" className={styles.logo} />
+                <div className={styles.logo}>
+                    <Unity />
+                </div>
             </ScrollAnimation>
         </div>
     </div>
