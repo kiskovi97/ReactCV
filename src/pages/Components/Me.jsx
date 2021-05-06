@@ -15,10 +15,10 @@ var Me = () =>
             <div className={styles.frontTitle}>
                 <div className={styles.title}>Kovács Gergő</div>
                 <div className={styles.logos}>
-                    <img src={insta} alt="" className={pStyles.minilogo}/>
-                    <img src={fb} alt="" className={pStyles.minilogo}/>
-                    <img src={linekdin} alt="" className={pStyles.minilogo}/>
-                    <img src={github} alt="" className={pStyles.minilogo}/>
+                    <a href="https://www.instagram.com/kiskovi9706/" className={pStyles.minilogo}><img src={insta} alt=""/></a>
+                    <a href="https://www.facebook.com/gergo.kovacs.948" className={pStyles.minilogo}><img src={fb} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/gerg%C5%91-kov%C3%A1cs-35215b154/" className={pStyles.minilogo}><img src={linekdin} alt=""/></a>
+                    <a href="https://github.com/kiskovi97" className={pStyles.minilogo}><img src={github} alt=""/></a>
                 </div>
             </div>
             <img src={image} alt="" className={styles.person}/>
