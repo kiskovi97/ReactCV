@@ -48,6 +48,11 @@
         position: absolute;
     }
 
+    .person img {
+        height: 0;
+        width: 0;
+    }
+
     .title {
         font-size: 3em;
         text-align: center;
