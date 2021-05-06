@@ -1,0 +1,9 @@
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid > div {
+    margin: auto;
+    position: relative;
+}

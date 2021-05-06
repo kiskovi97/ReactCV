@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 var Navbar = () =>
 (
     <div className={styles.Header}>
-        <h1>Kovács Gergő</h1>
         <ul>
             <li> <Link to="/">Home</Link></li>
             <li> <Link to="/about" >About Me</Link></li>

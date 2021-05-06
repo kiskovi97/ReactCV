@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './Page.module.css'
+import gStyles from './Grid.module.css'
 import Project from './Components/Project'
-import bme from './bme.png'
-import android from './android.png'
-import unity from './unity.png'
-import city from './City.png'
-import crowd from './Crowd.png'
-import deeper from './Deeper.png'
-import johny from './Johny.png'
+import bme from '../logos/bme.png'
+import android from '../logos/android.png'
+import unity from '../logos/unity.png'
+import city from '../images/City.png'
+import crowd from '../images/Crowd.png'
+import deeper from '../images/Deeper.png'
+import johny from '../images/Johny.png'
 
 var projects = [
     {
@@ -58,7 +59,7 @@ var projects = [
 
 var References = () =>
     <div className={styles.page}>
-        <div>
+        <div className={gStyles.grid}>
             <div>
                 <Project proj={projects[0]} />
                 <Project proj={projects[1]} />
@@ -67,7 +68,7 @@ var References = () =>
                 <img src={android} alt="" className={styles.logo} />
             </div>
         </div>
-        <div>
+        <div className={gStyles.grid}>
             <div>
                 <img src={bme} alt="" className={styles.logo} />
             </div>
@@ -76,7 +77,7 @@ var References = () =>
                 <Project proj={projects[3]} />
             </div>
         </div>
-        <div>
+        <div className={gStyles.grid}>
             <div>
                 <Project proj={projects[4]} />
                 <Project proj={projects[5]} />
