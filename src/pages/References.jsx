@@ -66,13 +66,13 @@ var References = () =>
                 <Project proj={projects[1]} />
             </div>
             <div>
-                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <img src={android} alt="" className={styles.logo} />
                 </ScrollAnimation>
             </div>
         </div>
         <div className={gStyles.grid}>
-            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                 <img src={bme} alt="" className={styles.logo} />
             </ScrollAnimation>
             <div>
@@ -85,7 +85,7 @@ var References = () =>
                 <Project proj={projects[4]} />
                 <Project proj={projects[5]} />
             </div>
-            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                 <img src={unity} alt="" className={styles.logo} />
             </ScrollAnimation>
         </div>

@@ -10,7 +10,7 @@ var Home = () =>
         <Me/>
     </div>
     <div className={gStyles.grid}>
-        <ScrollAnimation  animateIn="fadeInLeft" animateOut="fadeOutLeft">
+        <ScrollAnimation  animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce>
             <h3>Hey visiter</h3>
             <div>I am a softwere Engineer. I work mostly with unity, but as you see I know some basic React too</div>
         </ScrollAnimation>
