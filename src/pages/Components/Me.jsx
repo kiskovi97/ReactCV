@@ -23,11 +23,12 @@ var Me = () =>
             </div>
             <img src={image} alt="" className={styles.person}/>
         </div>
-        <div>
-            <div>Software Engineer</div>
-            <div>kiskovi97(at)gmail.com</div>
-            <div>https://github.com/kiskovi97</div>
-            <div>https://www.instagram.com/kiskovi9706/</div>
+        <div className={styles.description}>
+            <h1>I'm a Software Engineer and Game Developer.</h1>
+            <div> I make games for fun and for professionaly. 
+                I like to pursue intressting ideas and concepts and test them out first hand. 
+                If you are intressted in me or my work feel free to look around and contact me if you want.
+                I give great head ;)</div>
         </div>
     </div>
 
