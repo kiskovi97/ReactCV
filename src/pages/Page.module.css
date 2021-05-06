@@ -74,7 +74,7 @@ img.minilogo, .minilogo img {
 
 @media only screen and (max-width: 800px) {
 
-    .logo, .logo img {
+    .logo, .logo img, .logo svg {
         height: 10em;
         width: 10em;
         object-fit: scale-down;
