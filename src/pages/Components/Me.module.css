@@ -8,6 +8,12 @@
     position: absolute;
 }
 
+.person img {
+    height: 30em;
+    width: 30em;
+    object-fit: scale-down;
+}
+
 .frontTitle {
     position: relative;
     z-index: 1;

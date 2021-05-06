@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Project.module.css'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 var Project = (prop) => {
 
@@ -19,14 +20,14 @@ var Project = (prop) => {
             links.push((<div><a href={prop.proj.pdf} hidden={!prop.proj.github}>Thesis informantion</a></div>))
 
         return (<div className={styles.project}>
-            <div hidden={!prop.proj.image}>
-                <img src={prop.proj.image} alt="" className={styles.background} />
-            </div>
-            <div>
+            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft">
+                <img src={prop.proj.image} hidden={!prop.proj.image} alt="" className={styles.background} />
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight">
                 <h3>{prop.proj.title}</h3>
                 <div className={styles.details}>{prop.proj.details}</div>
                 <div className={styles.links}>{links}</div>
-            </div>
+            </ScrollAnimation>
         </div>)
     }
 

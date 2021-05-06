@@ -1,4 +1,4 @@
-
+import ScrollAnimation from 'react-animate-on-scroll'
 import React from 'react'
 import styles from './Page.module.css'
 import gStyles from './Grid.module.css'
@@ -10,10 +10,10 @@ var Home = () =>
         <Me/>
     </div>
     <div className={gStyles.grid}>
-        <div>
+        <ScrollAnimation  animateIn="fadeInLeft" animateOut="fadeOutLeft">
             <h3>Hey visiter</h3>
             <div>I am a softwere Engineer. I work mostly with unity, but as you see I know some basic React too</div>
-        </div>
+        </ScrollAnimation>
     </div>
 </div>
 export default Home

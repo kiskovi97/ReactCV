@@ -9,6 +9,7 @@ import city from '../images/City.png'
 import crowd from '../images/Crowd.png'
 import deeper from '../images/Deeper.png'
 import johny from '../images/Johny.png'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 var projects = [
     {
@@ -65,13 +66,15 @@ var References = () =>
                 <Project proj={projects[1]} />
             </div>
             <div>
-                <img src={android} alt="" className={styles.logo} />
+                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
+                    <img src={android} alt="" className={styles.logo} />
+                </ScrollAnimation>
             </div>
         </div>
         <div className={gStyles.grid}>
-            <div>
+            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
                 <img src={bme} alt="" className={styles.logo} />
-            </div>
+            </ScrollAnimation>
             <div>
                 <Project proj={projects[2]} />
                 <Project proj={projects[3]} />
@@ -82,9 +85,9 @@ var References = () =>
                 <Project proj={projects[4]} />
                 <Project proj={projects[5]} />
             </div>
-            <div>
+            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown">
                 <img src={unity} alt="" className={styles.logo} />
-            </div>
+            </ScrollAnimation>
         </div>
     </div>
 export default References
