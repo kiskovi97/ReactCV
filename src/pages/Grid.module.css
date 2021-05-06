@@ -6,6 +6,7 @@
 .grid > div {
     margin: auto;
     position: relative;
+    max-width: 40em;
 }
 
 @media only screen and (max-width: 800px) {
