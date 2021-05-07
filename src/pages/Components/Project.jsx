@@ -8,16 +8,16 @@ var Project = (prop) => {
 
         var links = [];
         if (prop.proj.github)
-            links.push((<div><a href={prop.proj.github} hidden={!prop.proj.github}>Github</a></div>))
+            links.push((<div key="github"><a href={prop.proj.github} hidden={!prop.proj.github}>Github</a></div>))
 
         if (prop.proj.android)
-            links.push((<div><a href={prop.proj.android} hidden={!prop.proj.github}>Play store</a></div>))
+            links.push((<div key="android"><a href={prop.proj.android} hidden={!prop.proj.github}>Play store</a></div>))
 
         if (prop.proj.youtube)
-            links.push((<div><a href={prop.proj.youtube} hidden={!prop.proj.github}>Youtube</a></div>))
+            links.push((<div key="youtube"><a href={prop.proj.youtube} hidden={!prop.proj.github}>Youtube</a></div>))
 
         if (prop.proj.pdf)
-            links.push((<div><a href={prop.proj.pdf} hidden={!prop.proj.github}>Thesis informantion</a></div>))
+            links.push((<div key="pdf"><a href={prop.proj.pdf} hidden={!prop.proj.github}>Thesis informantion</a></div>))
 
         return (<div className={styles.project}>
             <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
