@@ -37,10 +37,8 @@
 }
 
 .page > div:nth-child(even) {
-    position: relative;
     background-color: secondarylight;
     color: secondarydark;
-    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.315));
 }
 
 .page > div:nth-child(even) h2,.page > div:nth-child(even) h1,.page > div:nth-child(even) h3 {
@@ -52,8 +50,10 @@
 }
 
 .page > div {
+    position: relative;
     min-height: 30em;
     padding: 2em;
+    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.315));
 }
 
 img.minilogo, .minilogo img {
