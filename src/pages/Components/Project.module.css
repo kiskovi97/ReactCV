@@ -21,14 +21,30 @@
     object-fit: cover;
     animation: unset;
     margin-right: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
     border-radius: 25px;
     filter: grayscale(1) ;
+    transition: width 0.2s, height 0.2s;
 }
 
+.project > div > img.background:hover {
+    transform: scale(1.2, 1.2) ;
+    filter: none;
+    animation-name: hover;
+    animation-duration: 0.2s;
+}
+
+@keyframes hover {
+    from {
+        transform: scale(1, 1) ;
+    }
+    to {
+        transform: scale(1.2, 1.2) ;
+    }
+  }
+
 @media only screen and (max-width: 80em) {
-    .project > div > img.background {
+    .project > div > img.background, .project > div > img.background:hover {
         width: 0;
         height: 0;
         margin: 0;

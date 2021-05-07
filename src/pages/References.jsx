@@ -7,6 +7,8 @@ import city from '../images/City.png'
 import crowd from '../images/Crowd.png'
 import deeper from '../images/Deeper.png'
 import johny from '../images/Johny.png'
+import marching from '../images/Marching.png'
+import rewind from '../images/Rewind.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 var projects = [
@@ -46,6 +48,7 @@ var projects = [
         title: "Marching Cube Project",
         details: "This is a project where I tested my compute shader abilities. I made a Marching Cube algorithm and applyed to a \"water simulation\" and a map generation.",
         github: "https://github.com/kiskovi97/WaterBending",
+        image: marching,
     },
     {
         title: "Rewind man",
@@ -53,6 +56,7 @@ var projects = [
             + "I had to make a deterministic phyics simulation to work around the memoryheavy timecontroling mechanincs."
             + "The finished product was a nice multilevel puzle platformer that challenged my testers thinking abalities.",
         github: "https://github.com/kiskovi97/RewindMan",
+        image: rewind,
     },
 ]
 
