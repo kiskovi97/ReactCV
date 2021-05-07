@@ -18,6 +18,7 @@ class Project extends React.Component {
             <div className={styles.project}>
                 <div className={styles.fullImage}  onClick={() => this.onImageClicked(false)}>
                     <img src={prop.proj.image} hidden={!prop.proj.image} alt=""/>
+                    <div className={styles.details}><h3>{prop.proj.title}</h3>{prop.proj.details}</div>
                 </div>
                     
             </div>)

@@ -53,7 +53,6 @@
     position: relative;
     min-height: 30em;
     padding: 2em;
-    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.315));
 }
 
 img.minilogo, .minilogo img {

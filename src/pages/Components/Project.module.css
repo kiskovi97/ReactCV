@@ -41,10 +41,21 @@
     padding: 0;
 }
 
+.fullImage .details {
+    max-width: 30em;
+    margin: auto;
+    text-align: center;
+    color: primarylight;
+}
+
+.project .fullImage .details h2, .project .fullImage .details  h1,.project .fullImage .details  h3 {
+    color: secondarylight;
+}
+
 .fullImage img {
     display: block;
     width: auto;
-    height: 90%;
+    height: 70%;
     margin: 1em auto;
     object-fit: cover;
     border-radius: 25px;
