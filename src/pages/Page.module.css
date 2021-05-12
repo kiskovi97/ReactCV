@@ -1,5 +1,5 @@
 @value colors: "./colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark from colors;
+@value primarydark, primarylight, secondarydark, secondarylight, dark, secondarylightShadow, primarydarkShadow from colors;
 
 .page {
     height: max-content;
@@ -13,6 +13,7 @@
 .page > div:nth-child(odd){
     background-color: primarydark;
     color: primarylight;
+    background: linear-gradient(0deg, primarydarkShadow 0%, rgba(0, 0, 0, 0) 40%);
 }
 
 .page > div:nth-child(odd) a{
@@ -39,6 +40,7 @@
 .page > div:nth-child(even) {
     background-color: secondarylight;
     color: secondarydark;
+    background: linear-gradient(0deg, secondarylightShadow 0%, secondarylight 40%);
 }
 
 .page > div:nth-child(even) h2,.page > div:nth-child(even) h1,.page > div:nth-child(even) h3 {
