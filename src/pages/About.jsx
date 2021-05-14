@@ -57,6 +57,20 @@ var About = () =>
             </div>
         </ScrollAnimation>
     </div>
+    <div className={gStyles.grid}>
+        <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce>
+            <div className={styles.logo}>
+                <Bookr />
+            </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
+                    <a href="unitydl://thebookclub" className={styles.minilogo}><h3>Application</h3></a>
+                    <a href="unitydl://thebookclub?Dashboard" className={styles.minilogo}><h3>Dashboard</h3></a>
+                    <a href="unitydl://thebookclub?Library" className={styles.minilogo}><h3>Library</h3></a>
+                    <a href="unitydl://thebookclub?BookDetails:41" className={styles.minilogo}><h3>BookDeatails : Adelita</h3></a>
+                    <a href="unitydl://thebookclub?BookDetails:42" className={styles.minilogo}><h3>BookDeatails : Race around</h3></a>
+        </ScrollAnimation>
+    </div>
 </div>
 
 export default About;
