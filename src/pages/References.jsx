@@ -9,6 +9,7 @@ import deeper from '../images/Deeper.png'
 import johny from '../images/Johny.png'
 import marching from '../images/Marching.png'
 import rewind from '../images/Rewind.png'
+import duplicate from '../images/duplicate.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 var projects = [
@@ -58,6 +59,14 @@ var projects = [
         github: "https://github.com/kiskovi97/RewindMan",
         image: rewind,
     },
+    {
+        title: "Duplicate",
+        details: "This game was made based on a challenge. The challenge that I have to make a game in a weekend, from a random idea. " + 
+        "The challenge was a success, and with some tweets for mobile gameplay i published it on google play.",
+        github: "https://github.com/kiskovi97/Duplicate",
+        android: "https://play.google.com/store/apps/details?id=com.IgorodCavok.Duplicate",
+        image: duplicate,
+    },
 ]
 
 var References = () =>
@@ -66,6 +75,7 @@ var References = () =>
             <div>
                 <Project proj={projects[0]} />
                 <Project proj={projects[1]} />
+                <Project proj={projects[6]} />
             </div>
             <div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
