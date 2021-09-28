@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.975b60cb.chunk.css",
-    "main.js": "/ReactCV/static/js/main.951b4e17.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.951b4e17.chunk.js.map",
-    "runtime-main.js": "/ReactCV/static/js/runtime-main.19362bdb.js",
-    "runtime-main.js.map": "/ReactCV/static/js/runtime-main.19362bdb.js.map",
-    "static/js/2.45ffceef.chunk.js": "/ReactCV/static/js/2.45ffceef.chunk.js",
-    "static/js/2.45ffceef.chunk.js.map": "/ReactCV/static/js/2.45ffceef.chunk.js.map",
-    "static/js/3.9ee5816c.chunk.js": "/ReactCV/static/js/3.9ee5816c.chunk.js",
-    "static/js/3.9ee5816c.chunk.js.map": "/ReactCV/static/js/3.9ee5816c.chunk.js.map",
+    "main.css": "/ReactCV/static/css/main.8549ec48.chunk.css",
+    "main.js": "/ReactCV/static/js/main.10b3e14a.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.10b3e14a.chunk.js.map",
+    "runtime-main.js": "/ReactCV/static/js/runtime-main.635bc5f6.js",
+    "runtime-main.js.map": "/ReactCV/static/js/runtime-main.635bc5f6.js.map",
+    "static/js/2.a79a15fc.chunk.js": "/ReactCV/static/js/2.a79a15fc.chunk.js",
+    "static/js/2.a79a15fc.chunk.js.map": "/ReactCV/static/js/2.a79a15fc.chunk.js.map",
+    "static/js/3.5b78df74.chunk.js": "/ReactCV/static/js/3.5b78df74.chunk.js",
+    "static/js/3.5b78df74.chunk.js.map": "/ReactCV/static/js/3.5b78df74.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "static/css/main.975b60cb.chunk.css.map": "/ReactCV/static/css/main.975b60cb.chunk.css.map",
-    "static/js/2.45ffceef.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.45ffceef.chunk.js.LICENSE.txt",
+    "static/css/main.8549ec48.chunk.css.map": "/ReactCV/static/css/main.8549ec48.chunk.css.map",
+    "static/js/2.a79a15fc.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.a79a15fc.chunk.js.LICENSE.txt",
     "static/media/City.1cfa61fa.png": "/ReactCV/static/media/City.1cfa61fa.png",
     "static/media/Crowd.1a9f6a62.png": "/ReactCV/static/media/Crowd.1a9f6a62.png",
     "static/media/Deeper.f6989982.png": "/ReactCV/static/media/Deeper.f6989982.png",
@@ -32,9 +32,9 @@
     "static/media/unity.fe4a9b2b.svg": "/ReactCV/static/media/unity.fe4a9b2b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.19362bdb.js",
-    "static/js/2.45ffceef.chunk.js",
-    "static/css/main.975b60cb.chunk.css",
-    "static/js/main.951b4e17.chunk.js"
+    "static/js/runtime-main.635bc5f6.js",
+    "static/js/2.a79a15fc.chunk.js",
+    "static/css/main.8549ec48.chunk.css",
+    "static/js/main.10b3e14a.chunk.js"
   ]
 }
