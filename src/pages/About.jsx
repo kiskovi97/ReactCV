@@ -35,6 +35,15 @@ var About = () =>
                     <a href="https://thebookclub.page.link/app?Library" className={styles.minilogo}><h3>Library</h3></a>
                     <a href="https://thebookclub.page.link/app?BookDetails:41" className={styles.minilogo}><h3>BookDeatails : Adelita</h3></a>
                     <a href="https://thebookclub.page.link/app?BookDetails:42" className={styles.minilogo}><h3>BookDeatails : Race around</h3></a>
+            <h1>The Book Club Application link test (thebookclub:\\)</h1>
+                    <a href="thebookclub://app" className={styles.minilogo}><h3>Application</h3></a>
+                    <a href="thebookclub://app?Dashboard" className={styles.minilogo}><h3>Dashboard</h3></a>
+                    <a href="thebookclub://app?Library" className={styles.minilogo}><h3>Library</h3></a>
+                    <a href="thebookclub://app?BookDetails:41" className={styles.minilogo}><h3>BookDeatails : Adelita</h3></a>
+                    <a href="thebookclub://app?BookDetails:42" className={styles.minilogo}><h3>BookDeatails : Race around</h3></a>
+            <form name="myform" action="https://envch2uqthjfl5b.m.pipedream.net/" method="post">
+                <button>Post Deeplink test</button>
+            </form>
         </ScrollAnimation>
     </div>
     <div className={gStyles.grid}>
