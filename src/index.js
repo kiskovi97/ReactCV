@@ -13,24 +13,16 @@ const renderer = new Three.WebGL1Renderer({
   canvas: document.querySelector('#bg'),
 });
 
-const fCamera = new Three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 10, 50);
-const fRenderer = new Three.WebGL1Renderer({
-  alpha: true,
-  canvas: document.querySelector('#fg'),
-});
-
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-fRenderer.setPixelRatio(window.devicePixelRatio);
-fRenderer.setSize(window.innerWidth, window.innerHeight);
 
 function addStar() {
-  const geometry = new Three.SphereGeometry(0.25,24,24);
-  const material = new Three.MeshStandardMaterial({color: 0xFFFFFF});
+  const geometry = new Three.SphereGeometry(0.25, 24, 24);
+  const material = new Three.MeshStandardMaterial({ color: 0xFFFFFF });
   const star = new Three.Mesh(geometry, material);
 
-  const [x,y,z] = Array(3).fill().map(() => Three.MathUtils.randFloatSpread(300));
-  star.position.set(x,y * 2,z);
+  const [x, y, z] = Array(3).fill().map(() => Three.MathUtils.randFloatSpread(300));
+  star.position.set(x, y * 2, z);
   scene.add(star);
 }
 
@@ -44,20 +36,15 @@ function animate() {
 
 
   renderer.render(scene, camera);
-  fRenderer.render(scene, fCamera);
 }
 
 animate();
 
 function moveCamera() {
-    const t = document.body.getBoundingClientRect().top;
+  const t = document.body.getBoundingClientRect().top;
 
-
-    camera.rotation.x = t * 0.0001;
-    fCamera.rotation.x = t * 0.0001;
-
-    camera.position.y = t * 0.03;
-    fCamera.position.y = t * 0.03;
+  camera.rotation.x = t * 0.0001;
+  camera.position.y = t * 0.03;
 }
 
 document.body.onscroll = moveCamera;
