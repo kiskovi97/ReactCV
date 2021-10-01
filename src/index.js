@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import * as Three from 'three';
 
 const scene = new Three.Scene();
-const camera = new Three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 50, 1000);
+const camera = new Three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 10, 1000);
 const renderer = new Three.WebGL1Renderer({
   alpha: true,
   canvas: document.querySelector('#bg'),
@@ -16,25 +16,35 @@ const renderer = new Three.WebGL1Renderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
-function addStar() {
-  const geometry = new Three.SphereGeometry(0.25, 24, 24);
-  const material = new Three.MeshStandardMaterial({ color: 0xFFFFFF });
-  const star = new Three.Mesh(geometry, material);
+var images = ["unity.svg", "android.svg", "github.svg", "linkedin.svg"]
 
+function addStar() {
+  var loader = new Three.TextureLoader();
+  const geometry = new Three.PlaneGeometry(10, 10);
+  var image = images[Three.MathUtils.randInt(0,images.length-1)]
+  const material = new Three.MeshLambertMaterial({
+    map: loader.load(image, undefined, undefined, function () {
+      console.error( 'An error happened.' );
+    }),
+    transparent: true,
+    opacity: 0.1
+  });
+  const star = new Three.Mesh(geometry, material);
+  star.scale.set(0.5,0.5,0.5)
   const [x, y, z] = Array(3).fill().map(() => Three.MathUtils.randFloatSpread(300));
   star.position.set(x, y * 2, z);
+  star.rotation.y = Three.MathUtils.randFloatSpread(360)
   scene.add(star);
 }
 
-Array(1000).fill().forEach(addStar);
+Array(500).fill().forEach(addStar);
 
 const ambientLight = new Three.AmbientLight(0xFFFFFF);
 scene.add(ambientLight);
 
 function animate() {
   requestAnimationFrame(animate);
-
-
+  scene.children.forEach((child) => child.rotation.y += 0.01)
   renderer.render(scene, camera);
 }
 
