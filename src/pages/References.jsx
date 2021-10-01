@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Page.module.css'
 import gStyles from './Grid.module.css'
 import Project from './Components/Project'
-import {Unity, Android, BME} from './Icons'
+import { Unity, Android, BME } from './Icons'
 import city from '../images/City.png'
 import crowd from '../images/Crowd.png'
 import deeper from '../images/Deeper.png'
@@ -61,8 +61,8 @@ var projects = [
     },
     {
         title: "Duplicate",
-        details: "This game was made based on a challenge. The challenge that I have to make a game in a weekend, from a random idea. " + 
-        "The challenge was a success, and with some tweets for mobile gameplay i published it on google play.",
+        details: "This game was made based on a challenge. The challenge that I have to make a game in a weekend, from a random idea. " +
+            "The challenge was a success, and with some tweets for mobile gameplay i published it on google play.",
         github: "https://github.com/kiskovi97/Duplicate",
         android: "https://play.google.com/store/apps/details?id=com.IgorodCavok.Duplicate",
         image: duplicate,
@@ -71,41 +71,48 @@ var projects = [
 
 var References = () =>
     <div className={styles.page}>
-        <div className={gStyles.grid}>
-            <div>
-                <Project proj={projects[0]} />
-                <Project proj={projects[1]} />
-                <Project proj={projects[6]} />
-            </div>
-            <div>
-                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                <div className={styles.logo}>
-                    <Android />
+        <div>
+            <div className={gStyles.grid}>
+                <div>
+                    <Project proj={projects[0]} />
+                    <Project proj={projects[1]} />
+                    <Project proj={projects[6]} />
                 </div>
+                <div>
+                    <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
+                        <div className={styles.logo}>
+                            <Android />
+                        </div>
+                    </ScrollAnimation>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div className={gStyles.grid}>
+                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
+                    <div className={styles.logo}>
+                        <BME />
+                    </div>
+                </ScrollAnimation>
+                <div>
+                    <Project proj={projects[2]} />
+                    <Project proj={projects[3]} />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div className={gStyles.grid}>
+                <div>
+                    <Project proj={projects[4]} />
+                    <Project proj={projects[5]} />
+                </div>
+                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
+                    <div className={styles.logo}>
+                        <Unity />
+                    </div>
                 </ScrollAnimation>
             </div>
         </div>
-        <div className={gStyles.grid}>
-            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                <div className={styles.logo}>
-                    <BME />
-                </div>
-            </ScrollAnimation>
-            <div>
-                <Project proj={projects[2]} />
-                <Project proj={projects[3]} />
-            </div>
-        </div>
-        <div className={gStyles.grid}>
-            <div>
-                <Project proj={projects[4]} />
-                <Project proj={projects[5]} />
-            </div>
-            <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                <div className={styles.logo}>
-                    <Unity />
-                </div>
-            </ScrollAnimation>
-        </div>
+
     </div>
 export default References

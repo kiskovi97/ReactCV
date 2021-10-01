@@ -33,14 +33,14 @@
 
 .titleBlock {
     height: 30em;
-    width: 30em;
+    width: 40em;
 }
 
 div.description {
     max-width: 30em;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .person {
         height: 0;
         width: 0;

@@ -1,6 +1,8 @@
 .grid {
     display: grid; 
     grid-template-columns: 1fr 1fr;
+    max-width: 80em;
+    margin: 0 auto;
 }
 
 .grid > div {
@@ -9,7 +11,7 @@
     max-width: 40em;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .grid {
         display: grid; 
         grid-template-columns: 1fr;

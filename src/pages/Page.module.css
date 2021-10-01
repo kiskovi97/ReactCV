@@ -8,6 +8,7 @@
     text-align: left;
     background-color: primarydark;
     color: primarylight;
+    font-size: 1.2em;
 }
 
 .page > div:nth-child(odd){
@@ -81,16 +82,18 @@ img.minilogo, .minilogo img{
     object-fit: scale-down;
 }
 
+@media only screen and (max-width: 1400px) {
+
+    .page {
+        font-size: 1em;
+    }
+}
+
 
 @media only screen and (max-width: 800px) {
 
-    .logo, .logo img, .logo svg {
-        height: 10em;
-        width: 10em;
-        object-fit: scale-down;
-    }
 
-    h1, h2, h3 {
-        font-size: 1.5em;
+    .page {
+        font-size: 1em;
     }
 }
