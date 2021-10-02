@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.b1e0ec23.chunk.css",
-    "main.js": "/ReactCV/static/js/main.1f6319ae.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.1f6319ae.chunk.js.map",
+    "main.js": "/ReactCV/static/js/main.335b9c49.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.335b9c49.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.635bc5f6.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.635bc5f6.js.map",
-    "static/js/2.77cdd6df.chunk.js": "/ReactCV/static/js/2.77cdd6df.chunk.js",
-    "static/js/2.77cdd6df.chunk.js.map": "/ReactCV/static/js/2.77cdd6df.chunk.js.map",
+    "static/js/2.224321e7.chunk.js": "/ReactCV/static/js/2.224321e7.chunk.js",
+    "static/js/2.224321e7.chunk.js.map": "/ReactCV/static/js/2.224321e7.chunk.js.map",
     "static/js/3.5b78df74.chunk.js": "/ReactCV/static/js/3.5b78df74.chunk.js",
     "static/js/3.5b78df74.chunk.js.map": "/ReactCV/static/js/3.5b78df74.chunk.js.map",
     "index.html": "/ReactCV/index.html",
     "static/css/main.b1e0ec23.chunk.css.map": "/ReactCV/static/css/main.b1e0ec23.chunk.css.map",
-    "static/js/2.77cdd6df.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.77cdd6df.chunk.js.LICENSE.txt",
+    "static/js/2.224321e7.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.224321e7.chunk.js.LICENSE.txt",
     "static/media/City.1cfa61fa.png": "/ReactCV/static/media/City.1cfa61fa.png",
     "static/media/Crowd.1a9f6a62.png": "/ReactCV/static/media/Crowd.1a9f6a62.png",
     "static/media/Deeper.f6989982.png": "/ReactCV/static/media/Deeper.f6989982.png",
@@ -21,20 +21,22 @@
     "static/media/android.ab008d13.svg": "/ReactCV/static/media/android.ab008d13.svg",
     "static/media/bme.516d3736.svg": "/ReactCV/static/media/bme.516d3736.svg",
     "static/media/bookr_logo.5c6dac3c.svg": "/ReactCV/static/media/bookr_logo.5c6dac3c.svg",
+    "static/media/cooking_book.cf36b453.jpg": "/ReactCV/static/media/cooking_book.cf36b453.jpg",
     "static/media/duplicate.de76b8c2.png": "/ReactCV/static/media/duplicate.de76b8c2.png",
     "static/media/facebook.b5c69996.svg": "/ReactCV/static/media/facebook.b5c69996.svg",
     "static/media/github.6ec6aa91.svg": "/ReactCV/static/media/github.6ec6aa91.svg",
     "static/media/group.aab30264.svg": "/ReactCV/static/media/group.aab30264.svg",
     "static/media/instagram.b41ddd70.svg": "/ReactCV/static/media/instagram.b41ddd70.svg",
     "static/media/linkedin.d385a3bc.svg": "/ReactCV/static/media/linkedin.d385a3bc.svg",
+    "static/media/online_cv.61accf30.jpg": "/ReactCV/static/media/online_cv.61accf30.jpg",
     "static/media/profile_yellow.d487ef5c.png": "/ReactCV/static/media/profile_yellow.d487ef5c.png",
     "static/media/skills.8db5372d.svg": "/ReactCV/static/media/skills.8db5372d.svg",
     "static/media/unity.fe4a9b2b.svg": "/ReactCV/static/media/unity.fe4a9b2b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.635bc5f6.js",
-    "static/js/2.77cdd6df.chunk.js",
+    "static/js/2.224321e7.chunk.js",
     "static/css/main.b1e0ec23.chunk.css",
-    "static/js/main.1f6319ae.chunk.js"
+    "static/js/main.335b9c49.chunk.js"
   ]
 }
