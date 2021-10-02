@@ -4,7 +4,6 @@ import Me from './Components/Me'
 import gStyles from './Grid.module.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Bookr, BME, Group } from './Icons'
-import fb from '../logos/facebook.svg'
 
 var About = () =>
     <div className={styles.page}>

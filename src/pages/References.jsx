@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Page.module.css'
 import gStyles from './Grid.module.css'
 import Project from './Components/Project'
-import { Unity, Android, BME } from './Icons'
+import { Unity, Android, BME, ReactIcon } from './Icons'
 import city from '../images/City.png'
 import crowd from '../images/Crowd.png'
 import deeper from '../images/Deeper.png'
@@ -10,6 +10,8 @@ import johny from '../images/Johny.png'
 import marching from '../images/Marching.png'
 import rewind from '../images/Rewind.png'
 import duplicate from '../images/duplicate.png'
+import cooking_book from '../images/cooking_book.jpg'
+import online_cv from '../images/online_cv.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 var projects = [
@@ -67,6 +69,21 @@ var projects = [
         android: "https://play.google.com/store/apps/details?id=com.IgorodCavok.Duplicate",
         image: duplicate,
     },
+    {
+        title: "Online Resume",
+        details: "This website was build for creating an online resume, for me to upload all the projects that I worked on. But after some time it became my sandbox playground, "+ 
+        "to try any new ideas for webdevelopment (like Three.js), or test my projects deeplinking abilities.",
+        website: "https://kiskovi97.github.io/ReactCV/",
+        image: online_cv,
+    },
+    {
+        title: "Cooking Book",
+        details: "This is an other website that I developed just for fun. Me and my partner like to cook every sunday. And we often share the results on social media. "
+        +"But after many requests I created this website to share the whole receipts for each meal we tried to make.",
+        github: "https://github.com/kiskovi97/CookBook",
+        website: "https://kiskovi97.github.io/CookBook/",
+        image: cooking_book,
+    },
 ]
 
 var References = () =>
@@ -113,6 +130,18 @@ var References = () =>
                 </ScrollAnimation>
             </div>
         </div>
-
+        <div>
+            <div className={gStyles.grid}>
+                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
+                    <div className={styles.logo}>
+                        <ReactIcon />
+                    </div>
+                </ScrollAnimation>
+                <div>
+                    <Project proj={projects[7]} />
+                    <Project proj={projects[8]} />
+                </div>
+            </div>
+        </div>
     </div>
 export default References

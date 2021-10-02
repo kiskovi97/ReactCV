@@ -43,7 +43,10 @@ class Project extends React.Component {
                 links.push((<div key="youtube"><a href={prop.proj.youtube} hidden={!prop.proj.github}>Youtube</a></div>))
     
             if (prop.proj.pdf)
-                links.push((<div key="pdf"><a href={prop.proj.pdf} hidden={!prop.proj.github}>Thesis informantion</a></div>))
+                links.push((<div key="pdf"><a href={prop.proj.pdf} hidden={!prop.proj.pdf}>Thesis informantion</a></div>))
+                
+            if (prop.proj.website)
+                links.push((<div key="website"><a href={prop.proj.website} hidden={!prop.proj.website}>Website</a></div>))
     
             return (<div className={styles.project}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
