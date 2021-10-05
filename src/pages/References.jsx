@@ -11,7 +11,7 @@ import marching from '../images/Marching.png'
 import rewind from '../images/Rewind.png'
 import duplicate from '../images/duplicate.png'
 import cooking_book from '../images/cooking_book.jpg'
-import online_cv from '../images/online_cv.jpg'
+import parkett from '../images/parkett.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 var projects = [
@@ -70,11 +70,11 @@ var projects = [
         image: duplicate,
     },
     {
-        title: "Online Resume",
-        details: "This website was build for creating an online resume, for me to upload all the projects that I worked on. But after some time it became my sandbox playground, "+ 
-        "to try any new ideas for webdevelopment (like Three.js), or test my projects deeplinking abilities.",
-        website: "https://kiskovi97.github.io/ReactCV/",
-        image: online_cv,
+        title: "Parkett Klub Website",
+        details: "My self-active group, Parkett Klub needed a new website. I was tasked to redesign and make the frontend for that. It was my first website.",
+        website: "https://parkettklub.sch.bme.hu/community/",
+        github: "https://github.com/parkettklub/parkett",
+        image: parkett,
     },
     {
         title: "Cooking Book",

@@ -49,7 +49,7 @@ var About = () =>
             <div className={gStyles.grid}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
                     <h2>University Self-active groups</h2>
-                    <h3><a href={"https://www.facebook.com/ParkettKlub/"}>ParkettKlub</a></h3>
+                    <h3><a href={"https://parkettklub.sch.bme.hu/community/"}>ParkettKlub</a></h3>
                     <li>Public Relations</li>
                     <li>Event Orginizer</li>
                     <li>Leader</li>
