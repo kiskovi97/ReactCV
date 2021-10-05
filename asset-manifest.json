@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.b1e0ec23.chunk.css",
-    "main.js": "/ReactCV/static/js/main.335b9c49.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.335b9c49.chunk.js.map",
+    "main.js": "/ReactCV/static/js/main.f8d8b4a0.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.f8d8b4a0.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.635bc5f6.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.635bc5f6.js.map",
     "static/js/2.224321e7.chunk.js": "/ReactCV/static/js/2.224321e7.chunk.js",
@@ -28,7 +28,7 @@
     "static/media/group.aab30264.svg": "/ReactCV/static/media/group.aab30264.svg",
     "static/media/instagram.b41ddd70.svg": "/ReactCV/static/media/instagram.b41ddd70.svg",
     "static/media/linkedin.d385a3bc.svg": "/ReactCV/static/media/linkedin.d385a3bc.svg",
-    "static/media/online_cv.61accf30.jpg": "/ReactCV/static/media/online_cv.61accf30.jpg",
+    "static/media/parkett.f6426c0a.jpg": "/ReactCV/static/media/parkett.f6426c0a.jpg",
     "static/media/profile_yellow.d487ef5c.png": "/ReactCV/static/media/profile_yellow.d487ef5c.png",
     "static/media/skills.8db5372d.svg": "/ReactCV/static/media/skills.8db5372d.svg",
     "static/media/unity.fe4a9b2b.svg": "/ReactCV/static/media/unity.fe4a9b2b.svg"
@@ -37,6 +37,6 @@
     "static/js/runtime-main.635bc5f6.js",
     "static/js/2.224321e7.chunk.js",
     "static/css/main.b1e0ec23.chunk.css",
-    "static/js/main.335b9c49.chunk.js"
+    "static/js/main.f8d8b4a0.chunk.js"
   ]
 }
