@@ -25,7 +25,10 @@ class Project extends React.Component {
             <div className={styles.project}>
                 <div className={styles.fullImage}  onClick={() => this.onImageClicked(false)}>
                     <img src={prop.proj.image} hidden={!prop.proj.image} alt=""/>
-                    <div className={styles.details}><h3>{prop.proj.title}</h3>{prop.proj.details}</div>
+                    <div className={styles.details}>
+                        <h3>{prop.proj.title}</h3>
+                        <h5>{prop.proj.details}</h5>
+                    {prop.proj.specific.map(item => (<li>{item}</li>))}</div>
                 </div>
                     
             </div>)
@@ -37,7 +40,7 @@ class Project extends React.Component {
                 links.push((<div key="github"><a href={prop.proj.github} hidden={!prop.proj.github}>Github</a></div>))
     
             if (prop.proj.android)
-                links.push((<div key="android"><a href={prop.proj.android} hidden={!prop.proj.github}>Play store</a></div>))
+                links.push((<div key="android"><a href={prop.proj.android} hidden={!prop.proj.android}>Play store</a></div>))
     
             if (prop.proj.youtube)
                 links.push((<div key="youtube"><a href={prop.proj.youtube} hidden={!prop.proj.github}>Youtube</a></div>))

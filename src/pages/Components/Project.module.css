@@ -55,7 +55,7 @@
 .fullImage img {
     display: block;
     width: auto;
-    height: 70%;
+    height: 30%;
     margin: 1em auto;
     object-fit: cover;
     border-radius: 25px;
