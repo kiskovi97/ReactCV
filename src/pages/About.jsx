@@ -83,6 +83,7 @@ var About = () =>
                     <a href="thebookclub://app" className={styles.minilogo}><h3>Application</h3></a>
                     <a href="thebookclub://app?Dashboard" className={styles.minilogo}><h3>Dashboard</h3></a>
                     <a href="thebookclub://app?Library" className={styles.minilogo}><h3>Library</h3></a>
+                    <a href="thebookclub://app?Mackin&token=123" className={styles.minilogo}><h3>Mackin token 123</h3></a>
                     <a href="thebookclub://app?BookDetails:41" className={styles.minilogo}><h3>BookDeatails : Adelita</h3></a>
                     <a href="thebookclub://app?BookDetails:42" className={styles.minilogo}><h3>BookDeatails : Race around</h3></a>
                     <form name="myform" action="https://envch2uqthjfl5b.m.pipedream.net/" method="post">
