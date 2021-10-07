@@ -57,7 +57,7 @@ class Project extends React.Component {
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
                     <h3>{prop.proj.title}</h3>
-                    <div className={styles.details}>{prop.proj.details}</div>
+                    <div className={styles.details}>{prop.proj.specific.map(item => (<li>{item}</li>))}</div>
                     <div className={styles.links}>{links}</div>
                 </ScrollAnimation>
             </div>)
