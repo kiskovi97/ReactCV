@@ -33,15 +33,14 @@ var About = () =>
                     </div>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
-                    <h3>2015 - 2019</h3>
+                    <h3>Budapest University of Technology and Economics</h3>
                     <h4>Computer Engineering BSc</h4>
-                    <div>Budapest University of Technology and Economics</div>
-                    <h3>2019 - 2021</h3>
+                    <div>2015 - 2019</div>
                     <h4>Computer Engineering MSc</h4>
-                    <div>Budapest University of Technology and Economics</div>
-                    <h3>2016 - 2021</h3>
+                    <div>2019 - 2021</div>
+                    <h3>Simonyi Károly College for Advanced Studies</h3>
                     <h4>Schönherz Design Studio</h4>
-                    <div>Simonyi Károly College for Advanced Studies</div>
+                    <div>2016 - 2021</div>
                 </ScrollAnimation>
             </div>
         </div>
