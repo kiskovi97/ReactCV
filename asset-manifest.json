@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.c8054760.chunk.css",
-    "main.js": "/ReactCV/static/js/main.295e63d1.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.295e63d1.chunk.js.map",
+    "main.css": "/ReactCV/static/css/main.9569204c.chunk.css",
+    "main.js": "/ReactCV/static/js/main.da348486.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.da348486.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.635bc5f6.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.635bc5f6.js.map",
     "static/js/2.7878b344.chunk.js": "/ReactCV/static/js/2.7878b344.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.5b78df74.chunk.js": "/ReactCV/static/js/3.5b78df74.chunk.js",
     "static/js/3.5b78df74.chunk.js.map": "/ReactCV/static/js/3.5b78df74.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "static/css/main.c8054760.chunk.css.map": "/ReactCV/static/css/main.c8054760.chunk.css.map",
+    "static/css/main.9569204c.chunk.css.map": "/ReactCV/static/css/main.9569204c.chunk.css.map",
     "static/js/2.7878b344.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.7878b344.chunk.js.LICENSE.txt",
     "static/media/City.1cfa61fa.png": "/ReactCV/static/media/City.1cfa61fa.png",
     "static/media/Crowd.1a9f6a62.png": "/ReactCV/static/media/Crowd.1a9f6a62.png",
@@ -20,7 +20,7 @@
     "static/media/Rewind.9e5fa311.png": "/ReactCV/static/media/Rewind.9e5fa311.png",
     "static/media/android.ab008d13.svg": "/ReactCV/static/media/android.ab008d13.svg",
     "static/media/bme.516d3736.svg": "/ReactCV/static/media/bme.516d3736.svg",
-    "static/media/bookr_logo.5c6dac3c.svg": "/ReactCV/static/media/bookr_logo.5c6dac3c.svg",
+    "static/media/bookr_logo.ab4491c1.svg": "/ReactCV/static/media/bookr_logo.ab4491c1.svg",
     "static/media/bookrclass.44a27126.jpg": "/ReactCV/static/media/bookrclass.44a27126.jpg",
     "static/media/cooking_book.cf36b453.jpg": "/ReactCV/static/media/cooking_book.cf36b453.jpg",
     "static/media/duplicate.de76b8c2.png": "/ReactCV/static/media/duplicate.de76b8c2.png",
@@ -34,12 +34,13 @@
     "static/media/profile_yellow.d487ef5c.png": "/ReactCV/static/media/profile_yellow.d487ef5c.png",
     "static/media/skills.8db5372d.svg": "/ReactCV/static/media/skills.8db5372d.svg",
     "static/media/thebookclub.2b0cfd06.jpg": "/ReactCV/static/media/thebookclub.2b0cfd06.jpg",
+    "static/media/thewayout.65cf874e.jpg": "/ReactCV/static/media/thewayout.65cf874e.jpg",
     "static/media/unity.fe4a9b2b.svg": "/ReactCV/static/media/unity.fe4a9b2b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.635bc5f6.js",
     "static/js/2.7878b344.chunk.js",
-    "static/css/main.c8054760.chunk.css",
-    "static/js/main.295e63d1.chunk.js"
+    "static/css/main.9569204c.chunk.css",
+    "static/js/main.da348486.chunk.js"
   ]
 }
