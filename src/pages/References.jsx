@@ -43,7 +43,7 @@ var projects = [
         specific:[
             "Infinitly generated levels",
             "Self made 2D pixel art, with dark and light settings",
-            "GameJam project: made with one idea in one week",
+            "GameJam project:  made with one idea in one week",
             "Integrated Google Ads"
         ],
         github: "https://github.com/kiskovi97/TheWayOut",
