@@ -14,11 +14,13 @@ import cooking_book from '../images/cooking_book.jpg'
 import parkett from '../images/parkett.jpg'
 import thebookclub from '../images/thebookclub.jpg'
 import bookrclass from '../images/bookrclass.jpg'
+import thewayout from '../images/thewayout.jpg'
 import image_integration from '../images/image_integration.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 var projects = [
     {
+        androidGame: true,
         title: "Deeper and Deeper - Android game",
         details: "This is an infinty runner type game, with Unity URP and 2D lighting. The graphics is 2D pixel art made by me."
         +" The main project was made on a weekend for a challenge, and some small features and skins were added later.",
@@ -27,13 +29,29 @@ var projects = [
             "Self made 2D pixel art, with multiple skins and levels",
             "Market system",
             "Integrated Social Media Share system",
-            "GameJam project: made with one idea in one week"
+            "GameJam project: made with one idea in one week",
+            "Integrated Google Ads"
         ],
         github: "https://github.com/kiskovi97/DeeperAndDeeper",
         android: "https://play.google.com/store/apps/details?id=com.igorodcavok.DeeperAndDeeper",
         image: deeper,
     },
     {
+        androidGame: true,
+        title: "The Way Out - Android game",
+        details: "This is a puzzle game, where you build labyrinths peace by peace.",
+        specific:[
+            "Infinitly generated levels",
+            "Self made 2D pixel art, with dark and light settings",
+            "GameJam project: made with one idea in one week",
+            "Integrated Google Ads"
+        ],
+        github: "https://github.com/kiskovi97/TheWayOut",
+        android: "https://play.google.com/store/apps/details?id=com.kiskovi.thewayout",
+        image: thewayout,
+    },
+    {
+        androidGame: true,
         title: "Johnny Run - Android game",
         details: "This is an infinty runner type game, made with Unity. The graphics was made by me, and the project was made with my dear friend Dorogi-Kovács Gábor. "
             + "This was our first game out in play store, but sadly the project was abondend after a year and the game was shut down by Play Store.",
@@ -46,6 +64,7 @@ var projects = [
         image: johny,
     },
     {
+        bme: true,
         title: "Crowd Simulation with Unity DOTS",
         details: "This was my master's thesis of Budapest University of Technology and Economics"
             + " Crowd Simulation with Unity, using the Unity ECS packages."
@@ -63,6 +82,7 @@ var projects = [
         image: crowd,
     },
     {
+        bme: true,
         title: "Procedurally generated virtual city",
         details: "The subject of my thesis is creating procedurally generated virtual cities using Unity engine."
             + "This city is generated from scratch. Only textures and vehicle modells were given. The finished city contains moving vehicles like cars or trams."
@@ -80,6 +100,7 @@ var projects = [
         image: city,
     },
     {
+        bme: true,
         title: "Marching Cube Project",
         details: "This is a project where I tested my compute shader abilities."
         +" I made a Marching Cube algorithm and applyed to a \"water simulation\" and a map generation.",
@@ -93,6 +114,7 @@ var projects = [
         image: marching,
     },
     {
+        bme: true,
         title: "Rewind man",
         details: "This game was made for a University project. I inspired by the game Braid and implemented its basic rules in Unity (The player can rewind time). "
             + "I had to make a deterministic phyics simulation to work around the memoryheavy timecontroling mechanincs."
@@ -107,6 +129,7 @@ var projects = [
         image: rewind,
     },
     {
+        androidGame: true,
         title: "Duplicate",
         details: "This game was made based on a challenge. The challenge that I have to make a game in a weekend, from a random idea. " +
             "The challenge was a success, and with some tweets for mobile gameplay I published it on google play.",
@@ -121,6 +144,7 @@ var projects = [
         image: duplicate,
     },
     {
+        reactWebsite: true,
         title: "Parkett Klub Website",
         details: "My self-active group, Parkett Klub needed a new website. I was tasked to redesign and make the frontend for that. It was my first website.",
         specific: [
@@ -135,6 +159,7 @@ var projects = [
         image: parkett,
     },
     {
+        reactWebsite: true,
         title: "Cooking Book",
         details: "This is an other website that I developed just for fun. Me and my partner like to cook every sunday. And we often share the results on social media. "
         +"But after many requests I created this website to share the whole receipts for each meal we tried to make."
@@ -149,6 +174,7 @@ var projects = [
         image: cooking_book,
     },
     {
+        bookr: true,
         title: "The Book Club",
         details: "This app is a multiplatform interactive book reader application for students. This app was developed while working with Bookr Kids company."
         +" My work was mostly backend related, but post relase I was the owner of the whole production.",
@@ -162,6 +188,7 @@ var projects = [
         image: thebookclub,
     },
     {
+        bookr: true,
         title: "Bookr Class",
         details: "This app is a multiplatform interactive book reader application for children. This app was created based on the Book Club app. "
         +" I helped a bit at the pre-release phase, but post-release I joined the project permenantly.",
@@ -177,6 +204,7 @@ var projects = [
         image: bookrclass,
     },
     {
+        bookr: true,
         title: "Bookr Kids Apps",
         details: "The Apps have some things in common. "
         +"These features were implemented in multiple projects.",
@@ -192,6 +220,7 @@ var projects = [
         image: image_integration,
     },
     {
+        pcGame: true,
         title: "Ghostboy",
         details: "This project is a collaboration with my dear friend Tamás Czuder. "
         +"He is the owner of the original idea and he is the grpahic designer of the game. "
@@ -219,9 +248,7 @@ var References = () =>
         <div>
             <div className={gStyles.grid}>
                 <div>
-                    <Project proj={projects[0]} />
-                    <Project proj={projects[1]} />
-                    <Project proj={projects[6]} />
+                    {projects.filter(item => item.androidGame).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
                 <div>
                     <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
@@ -240,16 +267,14 @@ var References = () =>
                     </div>
                 </ScrollAnimation>
                 <div>
-                    <Project proj={projects[2]} />
-                    <Project proj={projects[3]} />
+                    {projects.filter(item => item.bme).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
             </div>
         </div>
         <div>
             <div className={gStyles.grid}>
                 <div>
-                    <Project proj={projects[4]} />
-                    <Project proj={projects[5]} />
+                    {projects.filter(item => item.pcGame).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
@@ -266,17 +291,14 @@ var References = () =>
                     </div>
                 </ScrollAnimation>
                 <div>
-                    <Project proj={projects[7]} />
-                    <Project proj={projects[8]} />
+                    {projects.filter(item => item.reactWebsite).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
             </div>
         </div>
         <div>
             <div className={gStyles.grid}>
                 <div>
-                    <Project proj={projects[11]} />
-                    <Project proj={projects[9]} />
-                    <Project proj={projects[10]} />
+                    {projects.filter(item => item.bookr).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
