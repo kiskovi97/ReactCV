@@ -4,10 +4,10 @@
 @value secondarydark: #1F0322;
 @value secondarylight: #5DB7DE;*/
 
-@value dark: #1A1423;
-@value primarydark: #3D314A;
-@value primarydarkShadow: #2D213A;
-@value primarylight: #997384;
-@value secondarydark: #5B3426;
-@value secondarylight: #EFC69B;
-@value secondarylightShadow: #CFA67B;
+@value dark: #141C34;
+@value primarydark: #243C54;
+@value primarydarkShadow: #142C44;
+@value primarylight: #FFFFFF;
+@value secondarydark: #181F1A;
+@value secondarylight: #98DFEA;
+@value secondarylightShadow: #88CFDA;

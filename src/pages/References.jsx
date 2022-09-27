@@ -16,16 +16,17 @@ import thebookclub from '../images/thebookclub.jpg'
 import bookrclass from '../images/bookrclass.jpg'
 import thewayout from '../images/thewayout.jpg'
 import image_integration from '../images/image_integration.jpg'
+import image_ghostboy from '../images/ghostboy.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-var projects = [
+export var projects = [
     {
         androidGame: true,
         title: "Deeper and Deeper - Android game",
         details: "This is an infinty runner type game, with Unity URP and 2D lighting. The graphics is 2D pixel art made by me."
         +" The main project was made on a weekend for a challenge, and some small features and skins were added later.",
         specific:[
-            "Infinit generated playground",
+            "Infinitly generated playground",
             "Self made 2D pixel art, with multiple skins and levels",
             "Market system",
             "Integrated Social Media Share system",
@@ -43,7 +44,7 @@ var projects = [
         specific:[
             "Infinitly generated levels",
             "Self made 2D pixel art, with dark and light settings",
-            "GameJam project:  made with one idea in one week",
+            "GameJam project: made with one idea in one week",
             "Integrated Google Ads"
         ],
         github: "https://github.com/kiskovi97/TheWayOut",
@@ -56,7 +57,7 @@ var projects = [
         details: "This is an infinty runner type game, made with Unity. The graphics was made by me, and the project was made with my dear friend Dorogi-Kovács Gábor. "
             + "This was our first game out in play store, but sadly the project was abondend after a year and the game was shut down by Play Store.",
         specific:[
-            "Infinit generated playground",
+            "Infinitly generated playground",
             "Self made 3D models and textures",
             "Market system"
         ],
@@ -68,12 +69,12 @@ var projects = [
         title: "Crowd Simulation with Unity DOTS",
         details: "This was my master's thesis of Budapest University of Technology and Economics"
             + " Crowd Simulation with Unity, using the Unity ECS packages."
-            + " I worked on this project for 2 semesters and made a youtube video series explaining it to others. ",
+            + " I worked on this project for 2 semesters and made a youtube video series explaining it to others.",
         specific:[
             "Unity ECS technology",
             "Crowd simulation aglorithms",
             "Testing enviroments with exported data",
-            "Deep documentation about the algoprithms and the ECS for learning",
+            "Deep documentation about the algorithms and the ECS for learning",
             "Youtube playlist about ECS and the algorithms"
         ],
         github: "https://github.com/kiskovi97/CrowdSimulation",
@@ -86,10 +87,10 @@ var projects = [
         title: "Procedurally generated virtual city",
         details: "The subject of my thesis is creating procedurally generated virtual cities using Unity engine."
             + "This city is generated from scratch. Only textures and vehicle modells were given. The finished city contains moving vehicles like cars or trams."
-            +" Later made into a game for an other project.",
+            +" Later made it into a game for an other project.",
         specific: [
-            "Procadurally generated buildings",
-            "Procedrually generated streats",
+            "Procedurally generated buildings",
+            "Procedurally generated streats",
             "Customizable parameters for generation with UI implementation",
             "Automated cars and trams with collision detection",
             "3D modells generation system with texture mapping",
@@ -215,7 +216,22 @@ var projects = [
             "Deeplink integration for Android, IOS, Mac and Windows",
             "Optimized download handeling for pictures and books",
             "Integrated In App purchase (IOS, Mac and Android) with restore function",
-            "App store integration with autmated building scripts"
+            "App store integration with autmated building scripts",
+            "SSO integration with multiple clients"
+        ],
+        image: image_integration,
+    },
+    {
+        bookr: true,
+        title: "Bookr Kids Web Based Solutions",
+        details: "One of Bookr's client requested a web-based solution for Bookr Class. "
+        + "I was tasked to plan, implement and lead the development and communication with the client.",
+        specific: [
+            "React based library with integrated Unity-WebGL player",
+            "NodeJs backend with custom environment variables",
+            "SSO Login implementation",
+            "Subscription handeling enpoints",
+            "AWS staging and production environment (EC2, CloudFront, S3, RDS)"
         ],
         image: image_integration,
     },
@@ -226,20 +242,19 @@ var projects = [
         +"He is the owner of the original idea and he is the grpahic designer of the game. "
         +"I was brought on to the project by a recomendation for helping out in the coding departmant.",
         specific: [
-            "Towerdefense mechanics with special abilities and bosses",
-            "Events and other Gameplay modifiers for more intressting levels",
-            "Structured codebase made with separated modules",
-            "UI System that works with bothy keyboard+mouse and controller",
-            "Family Member, Perks and Helps management system with optimized calculation time",
-            "Soundtrack and sound system handeling system",
-            "Gamestate saving system with level availability",
-            "Universal UI window system",
-            "Character special ability system",
+            "2D Towerdefense mechanics with special abilities and bosses",
+            "Unity Services integration (Remote config, Analytics)",
+            "Modular architecture with Dependency Injection",
+            //"Events and other Gameplay modifiers for more intressting levels",
+            "Keyboard and Controller support",
+            "Management system with optimized calculation time",
+            "FMOD integration",
             "2D Lighting integrated with shadows",
-            "Scriptable objects based design",
-            "Prefab based level design"
+            "Scriptable object and Prefab based design",
+            "Localization",
+            "Automated level testing"
         ],
-        image: image_integration,
+        image: image_ghostboy,
     }
 ]
 
@@ -287,35 +302,24 @@ var References = () =>
             <div className={gStyles.grid}>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
-                        <ReactIcon />
+                        <Bookr />
                     </div>
                 </ScrollAnimation>
                 <div>
-                    {projects.filter(item => item.reactWebsite).map((item, index) => (<Project proj={item} index={index}/>))}
+                    {projects.filter(item => item.bookr).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
             </div>
         </div>
         <div>
             <div className={gStyles.grid}>
                 <div>
-                    {projects.filter(item => item.bookr).map((item, index) => (<Project proj={item} index={index}/>))}
+                    {projects.filter(item => item.reactWebsite).map((item, index) => (<Project proj={item} index={index}/>))}
                 </div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
-                        <Bookr />
+                        <ReactIcon />
                     </div>
                 </ScrollAnimation>
-            </div>
-        </div>
-        <div hidden={true}>
-            <div className={gStyles.grid}>
-                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                    <div className={styles.logo}>
-                    </div>
-                </ScrollAnimation>
-                <div>
-                    <Project proj={projects[12]} />
-                </div>
             </div>
         </div>
     </div>

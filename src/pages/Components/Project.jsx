@@ -11,13 +11,6 @@ class Project extends React.Component {
         this.setState({clicked: value});
     }
 
-    //componentDidMount() {
-    //    window.open('unitydl://thebookclub?Dashboard', '_blank');
-    //   }
-    //componentWillMount() {
-    //    window.open('unitydl://thebookclub?Dashboard', '_blank');
-    //   }
-
     render () {
         var prop = this.props;
         if (this.state.clicked) {

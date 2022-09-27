@@ -3,7 +3,9 @@ import React from 'react'
 import styles from './Page.module.css'
 import gStyles from './Grid.module.css'
 import Me from './Components/Me'
-import { Skill } from './Icons'
+import { projects } from './References.jsx'
+import { Unity } from './Icons'
+import Project from './Components/Project'
 
 var Home = () =>
     <div className={styles.page}>
@@ -12,21 +14,12 @@ var Home = () =>
         </div>
         <div>
             <div className={gStyles.grid}>
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
-                    <h2>Skills</h2>
-                    <h3>Programming Languages</h3>
-                    <div>C, C++, C#, Java, Html, Css, Javascript, SQL</div>
-                    <h3>Software Skills</h3>
-                    <div>Blender3D, 3DSMax, AndroidStudio,
-                        AdobeIllustrator, AdobePhotoshop,
-                        Unity, Oracle, React, Angular,WebGL
-                        MicrosoftSQLServer, .NET</div>
-                    <h3>OtherSkills</h3>
-                    <div>Public Relations, ProjectManagment, GraphicDesign</div>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
+                <div>
+                    {projects.filter(item => item.pcGame).map((item, index) => (<Project proj={item} index={index}/>))}
+                </div>
+                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
-                        <Skill />
+                        <Unity />
                     </div>
                 </ScrollAnimation>
             </div>
