@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.1af541c3.css",
-    "main.js": "/ReactCV/static/js/main.9661079b.js",
+    "main.css": "/ReactCV/static/css/main.a1f31560.css",
+    "main.js": "/ReactCV/static/js/main.befc1e44.js",
     "static/js/787.bbc21cb1.chunk.js": "/ReactCV/static/js/787.bbc21cb1.chunk.js",
     "static/media/City.png": "/ReactCV/static/media/City.1cfa61fa20966318ee1c.png",
     "static/media/Johny.png": "/ReactCV/static/media/Johny.78404fad6910df7c0f9e.png",
     "static/media/Rewind.png": "/ReactCV/static/media/Rewind.9e5fa31115020d5d3199.png",
+    "static/media/ghostboy_gardener.png": "/ReactCV/static/media/ghostboy_gardener.34067c8b19f60213c3d3.png",
     "static/media/Crowd.png": "/ReactCV/static/media/Crowd.1a9f6a624026c4d2448e.png",
-    "static/media/profile_yellow.png": "/ReactCV/static/media/profile_yellow.d487ef5c4fae3b84dff0.png",
     "static/media/Marching.png": "/ReactCV/static/media/Marching.9b4d9159ececbc9db5c9.png",
     "static/media/duplicate.png": "/ReactCV/static/media/duplicate.de76b8c2476c25eac9c0.png",
     "static/media/cooking_book.jpg": "/ReactCV/static/media/cooking_book.cf36b453e41c5c290fbb.jpg",
@@ -17,6 +17,7 @@
     "static/media/bookrclass.jpg": "/ReactCV/static/media/bookrclass.44a27126f0bf1e92c4ea.jpg",
     "static/media/image_integration.jpg": "/ReactCV/static/media/image_integration.43eb8c94826daded8a74.jpg",
     "static/media/thewayout.jpg": "/ReactCV/static/media/thewayout.65cf874efca0e7cc3765.jpg",
+    "static/media/ghostboy.jpg": "/ReactCV/static/media/ghostboy.d96a5a5f9ab8e686914e.jpg",
     "static/media/bme.svg": "/ReactCV/static/media/bme.c84f271596460ed5cec78cfb859e0c94.svg",
     "static/media/bookr_logo.svg": "/ReactCV/static/media/bookr_logo.5c6dac3c541385efe529b48e70f3bb17.svg",
     "static/media/instagram.svg": "/ReactCV/static/media/instagram.78c3e341c4d09c768745059e2e70a9a1.svg",
@@ -27,13 +28,12 @@
     "index.html": "/ReactCV/index.html",
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
     "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
-    "static/media/facebook.svg": "/ReactCV/static/media/facebook.549dbf0fe05e7b4a3dde9dbffd1112d4.svg",
-    "main.1af541c3.css.map": "/ReactCV/static/css/main.1af541c3.css.map",
-    "main.9661079b.js.map": "/ReactCV/static/js/main.9661079b.js.map",
+    "main.a1f31560.css.map": "/ReactCV/static/css/main.a1f31560.css.map",
+    "main.befc1e44.js.map": "/ReactCV/static/js/main.befc1e44.js.map",
     "787.bbc21cb1.chunk.js.map": "/ReactCV/static/js/787.bbc21cb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1af541c3.css",
-    "static/js/main.9661079b.js"
+    "static/css/main.a1f31560.css",
+    "static/js/main.befc1e44.js"
   ]
 }
