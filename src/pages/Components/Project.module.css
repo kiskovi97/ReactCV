@@ -1,9 +1,13 @@
 @value colors: "../colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark from colors;
+@value primarydark, primarylight, secondarydark, secondarylight, dark, linkColor from colors;
 
 .links > div {
     display: inline;
     padding: 0.5em;
+}
+
+.links > .link > a {
+    color: linkColor;
 }
 
 .details {

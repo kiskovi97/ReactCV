@@ -30,19 +30,19 @@ class Project extends React.Component {
         if (prop.proj) {
             var links = [];
             if (prop.proj.github)
-                links.push((<div key="github"><a href={prop.proj.github} hidden={!prop.proj.github}>Github</a></div>))
+                links.push((<div key="github" className={styles.link}><a href={prop.proj.github} hidden={!prop.proj.github}>Github</a></div>))
     
             if (prop.proj.android)
-                links.push((<div key="android"><a href={prop.proj.android} hidden={!prop.proj.android}>Play store</a></div>))
+                links.push((<div key="android" className={styles.link}><a href={prop.proj.android} hidden={!prop.proj.android}>Play store</a></div>))
     
             if (prop.proj.youtube)
-                links.push((<div key="youtube"><a href={prop.proj.youtube} hidden={!prop.proj.github}>Youtube</a></div>))
+                links.push((<div key="youtube" className={styles.link}><a href={prop.proj.youtube} hidden={!prop.proj.github}>Youtube</a></div>))
     
             if (prop.proj.pdf)
-                links.push((<div key="pdf"><a href={prop.proj.pdf} hidden={!prop.proj.pdf}>Thesis informantion</a></div>))
+                links.push((<div key="pdf" className={styles.link}><a href={prop.proj.pdf} hidden={!prop.proj.pdf}>Thesis informantion</a></div>))
                 
             if (prop.proj.website)
-                links.push((<div key="website"><a href={prop.proj.website} hidden={!prop.proj.website}>Website</a></div>))
+                links.push((<div key="website" className={styles.link}><a href={prop.proj.website} hidden={!prop.proj.website}>Website</a></div>))
     
             return (<div className={styles.project}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
@@ -50,7 +50,7 @@ class Project extends React.Component {
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
                     <h3>{prop.proj.title}</h3>
-                    <div className={styles.details}>{prop.proj.specific.map(item => (<li>{item}</li>))}</div>
+                    <div className={styles.details}>{prop.proj.specific.map(item => (<div>{item}</div>))}</div>
                     <div className={styles.links}>{links}</div>
                 </ScrollAnimation>
             </div>)

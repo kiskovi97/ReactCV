@@ -39,7 +39,7 @@ var Me = () =>
                     If you are interested in my work feel free to look around and contact me if you want.
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce>
-                    <h3>kiskovi97@gmail.com</h3>
+                    <h3 className={styles.link}>kiskovi97@gmail.com</h3>
                 </ScrollAnimation>
             </div>
         </div>

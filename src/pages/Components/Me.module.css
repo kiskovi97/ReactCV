@@ -1,5 +1,6 @@
 @value colors: "../colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark from colors;
+@value primarydark, primarylight, secondarydark, secondarylight, dark, linkColor from colors;
+
 
 .person {
     height: 30em;
@@ -38,6 +39,11 @@
 
 div.description {
     max-width: 30em;
+}
+
+
+.description .link {
+    color: linkColor;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -17,11 +17,6 @@
     background: linear-gradient(0deg, primarydarkShadow 0%, rgba(0, 0, 0, 0) 40%);
 }
 
-.page > div:nth-child(odd) a{
-    color: white;
-}
-
-
 .page > div:nth-child(odd) .logo svg path, .page > div:nth-child(odd) .logo svg line, .page > div:nth-child(odd) .logo svg polyline, .page > div:nth-child(odd) .logo svg polygon{
     fill: secondarylight;
     color: secondarylight;
@@ -34,7 +29,7 @@
     stroke: primarydark;
 }
 
-.page > div:nth-child(odd) h2, .page > div:nth-child(odd) h1,.page > div:nth-child(odd) h3 {
+.page > div:nth-child(odd) {
     color: secondarylight;
 }
 
@@ -44,12 +39,8 @@
     background: linear-gradient(0deg, secondarylightShadow 0%, secondarylight 40%);
 }
 
-.page > div:nth-child(even) h2,.page > div:nth-child(even) h1,.page > div:nth-child(even) h3 {
+.page > div:nth-child(even) {
     color: primarydark;
-}
-
-.page > div:nth-child(even) a{
-    color: black;
 }
 
 .page > div {

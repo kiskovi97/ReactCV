@@ -276,14 +276,14 @@ var References = () =>
         </div>
         <div>
             <div className={gStyles.grid}>
+                <div>
+                    {projects.filter(item => item.bme).map((item, index) => (<Project proj={item} index={index}/>))}
+                </div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
                         <BME />
                     </div>
                 </ScrollAnimation>
-                <div>
-                    {projects.filter(item => item.bme).map((item, index) => (<Project proj={item} index={index}/>))}
-                </div>
             </div>
         </div>
         <div>
@@ -300,14 +300,14 @@ var References = () =>
         </div>
         <div>
             <div className={gStyles.grid}>
+                <div>
+                    {projects.filter(item => item.bookr).map((item, index) => (<Project proj={item} index={index}/>))}
+                </div>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
                         <Bookr />
                     </div>
                 </ScrollAnimation>
-                <div>
-                    {projects.filter(item => item.bookr).map((item, index) => (<Project proj={item} index={index}/>))}
-                </div>
             </div>
         </div>
         <div>
