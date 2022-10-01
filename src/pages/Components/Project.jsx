@@ -17,11 +17,18 @@ class Project extends React.Component {
             return (
             <div className={styles.project}>
                 <div className={styles.fullImage}  onClick={() => this.onImageClicked(false)}>
-                    <img src={prop.proj.image} hidden={!prop.proj.image} alt=""/>
-                    <div className={styles.details}>
-                        <h3>{prop.proj.title}</h3>
-                        <h5>{prop.proj.details}</h5>
-                    {prop.proj.specific.map(item => (<li>{item}</li>))}</div>
+                    <div className={styles.grid}>
+                        <div>
+                            <div className={styles.title}>{prop.proj.title}</div>
+                            <img src={prop.proj.image} hidden={!prop.proj.image} alt="" className={styles.image}/>
+                            <div className={styles.overlay}></div>
+                        </div>
+                        <div className={styles.details}>
+                            <div className={styles.description}>{prop.proj.details}</div>
+                            {prop.proj.specific.map(item => (<div className={styles.listItem}>{item}</div>))}
+                        </div>
+
+                    </div>
                 </div>
                     
             </div>)

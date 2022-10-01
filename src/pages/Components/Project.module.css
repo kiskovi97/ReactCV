@@ -54,11 +54,64 @@
     padding: 0;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80em;
+    margin: 5em auto;
+}
+
+.grid .title {
+    font-size: 7em;
+    font-weight: bold;
+    color: secondarylight;
+    filter: drop-shadow(4px 5px 10px rgba(34, 34, 34, 0.7));
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+
 .fullImage .details {
     max-width: 30em;
     margin: auto;
-    text-align: center;
     color: primarylight;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.fullImage  .details .description {
+    margin-bottom: 2em;
+    font-size: bold;
+    line-height: 30px;
+}
+
+.fullImage .details .listItem {
+    padding-left: 1em;
+}
+
+.grid > div {
+    position: relative;
+}
+
+.fullImage .image {
+    position: absolute;
+    z-index: -2;
+    top: 5em;
+    left: 5em;
+    height: 30em;
+    width: 30em;
+    object-fit: cover;
+    margin: 0;
+}
+
+.fullImage .overlay {
+    position: absolute;
+    z-index: -1;
+    top: 5em;
+    left: 5em;
+    height: 30em;
+    width: 30em;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, #09004bab 0%, #160e5352 100%);
 }
 
 .project .fullImage .details h2, .project .fullImage .details  h1,.project .fullImage .details  h3 {
