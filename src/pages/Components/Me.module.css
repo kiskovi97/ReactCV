@@ -25,8 +25,8 @@
     width: 30em;
     object-fit: scale-down;
     bottom: -3em;
-    left: 10em;
-    z-index: 0;
+    left: 9.8em;
+    z-index: 1;
     position: absolute;
 }
 

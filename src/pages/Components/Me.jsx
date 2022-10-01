@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Me.module.css'
-import image from '../../images/ghostboy_gardener.png'
+import image from '../../images/ghostboy_gardener02Color.png'
 import pStyles from '../Page.module.css'
 
 import insta from '../../logos/instagram.svg'
