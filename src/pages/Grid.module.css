@@ -1,18 +1,29 @@
 .grid {
     display: grid; 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr min-content;
     max-width: 80em;
     margin: 0 auto;
 }
 
-.grid > div {
-    margin: auto;
+.gridsmall {
+    display: grid; 
+    grid-template-columns: 1fr min-content;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.grid > div, .gridsmall > div {
+    width: 100%;
     position: relative;
-    max-width: 40em;
 }
 
 @media only screen and (max-width: 1000px) {
     .grid {
+        display: grid; 
+        grid-template-columns: 1fr;
+    }
+
+    .gridsmall {
         display: grid; 
         grid-template-columns: 1fr;
     }

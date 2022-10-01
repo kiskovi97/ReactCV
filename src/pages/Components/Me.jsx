@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Me.module.css'
 import image from '../../images/ghostboy_gardener.png'
-import gStyles from '../Grid.module.css'
 import pStyles from '../Page.module.css'
 
 import insta from '../../logos/instagram.svg'
@@ -11,7 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 var Me = () =>
     <div>
-        <div className={gStyles.grid}>
+        <div className={styles.grid}>
             <div className={styles.titleBlock}>
                 <div className={styles.frontTitle}>
                     <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce offset={20}>
@@ -39,7 +38,7 @@ var Me = () =>
                     If you are interested in my work feel free to look around and contact me if you want.
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce>
-                    <h3 className={styles.link}>kiskovi97@gmail.com</h3>
+                    <h3 className={styles.link}><a href="mailto:kiskovi97@gmail.com">kiskovi97@gmail.com</a></h3>
                 </ScrollAnimation>
             </div>
         </div>

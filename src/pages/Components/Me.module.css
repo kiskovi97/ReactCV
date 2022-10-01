@@ -1,6 +1,24 @@
 @value colors: "../colors.css";
 @value primarydark, primarylight, secondarydark, secondarylight, dark, linkColor from colors;
 
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.grid > div {
+    width: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+        display: grid; 
+        grid-template-columns: 1fr;
+    }
+}
 
 .person {
     height: 30em;

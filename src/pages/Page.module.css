@@ -1,5 +1,5 @@
 @value colors: "./colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark, secondarylightShadow, primarydarkShadow from colors;
+@value primarydark, primarylight, secondarydark, secondarylight, dark, secondarylightShadow, primarydarkShadow, linkColor from colors;
 
 .page {
     height: max-content;
@@ -9,6 +9,12 @@
     background-color: primarydark;
     color: primarylight;
     font-size: 1.2em;
+}
+
+.page a {
+    color: linkColor;
+    text-decoration: unset;
+    font-weight: bold;
 }
 
 .page > div:nth-child(odd){
@@ -68,9 +74,10 @@ img.minilogo, .minilogo img{
 }
 
 .logo, .logo img, .logo svg {
-    height: 20em;
-    width: 20em;
+    height: 15em;
+    width: 15em;
     object-fit: scale-down;
+    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.082));
 }
 
 @media only screen and (max-width: 1400px) {

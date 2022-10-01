@@ -17,12 +17,13 @@ import bookrclass from '../images/bookrclass.jpg'
 import thewayout from '../images/thewayout.jpg'
 import image_integration from '../images/image_integration.jpg'
 import image_ghostboy from '../images/ghostboy.jpg'
+import image_sofatutor from '../images/sofatutor.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 export var projects = [
     {
         androidGame: true,
-        title: "Deeper and Deeper - Android game",
+        title: "Deeper and Deeper",
         details: "This is an infinty runner type game, with Unity URP and 2D lighting. The graphics is 2D pixel art made by me."
         +" The main project was made on a weekend for a challenge, and some small features and skins were added later.",
         specific:[
@@ -39,7 +40,7 @@ export var projects = [
     },
     {
         androidGame: true,
-        title: "The Way Out - Android game",
+        title: "The Way Out",
         details: "This is a puzzle game, where you build labyrinths peace by peace.",
         specific:[
             "Infinitly generated levels",
@@ -53,7 +54,7 @@ export var projects = [
     },
     {
         androidGame: true,
-        title: "Johnny Run - Android game",
+        title: "Johnny Run",
         details: "This is an infinty runner type game, made with Unity. The graphics was made by me, and the project was made with my dear friend Dorogi-Kovács Gábor. "
             + "This was our first game out in play store, but sadly the project was abondend after a year and the game was shut down by Play Store.",
         specific:[
@@ -155,7 +156,6 @@ export var projects = [
             "Mobile and Desktop view support",
             "Self made design and graphics"
         ],
-        website: "https://parkettklub.sch.bme.hu/community/",
         github: "https://github.com/parkettklub/parkett",
         image: parkett,
     },
@@ -206,6 +206,21 @@ export var projects = [
     },
     {
         bookr: true,
+        title: "Bookr Kids Web Based Solutions",
+        details: "One of Bookr's client requested a web-based solution for Bookr Class. "
+        + "I was tasked to plan, implement and lead the development and communication with the client.",
+        specific: [
+            "React based library with integrated Unity-WebGL player",
+            "NodeJs backend with custom environment variables",
+            "SSO Login implementation",
+            "Subscription handeling enpoints",
+            "AWS staging and production environment (EC2, CloudFront, S3, RDS)"
+        ],
+        image: image_sofatutor,
+        website: "http://app-sofatutor.bookrclass.com/",
+    },
+    {
+        bookr: true,
         title: "Bookr Kids Apps",
         details: "The Apps have some things in common. "
         +"These features were implemented in multiple projects.",
@@ -218,20 +233,6 @@ export var projects = [
             "Integrated In App purchase (IOS, Mac and Android) with restore function",
             "App store integration with autmated building scripts",
             "SSO integration with multiple clients"
-        ],
-        image: image_integration,
-    },
-    {
-        bookr: true,
-        title: "Bookr Kids Web Based Solutions",
-        details: "One of Bookr's client requested a web-based solution for Bookr Class. "
-        + "I was tasked to plan, implement and lead the development and communication with the client.",
-        specific: [
-            "React based library with integrated Unity-WebGL player",
-            "NodeJs backend with custom environment variables",
-            "SSO Login implementation",
-            "Subscription handeling enpoints",
-            "AWS staging and production environment (EC2, CloudFront, S3, RDS)"
         ],
         image: image_integration,
     },
@@ -282,6 +283,9 @@ var References = () =>
                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
                     <div className={styles.logo}>
                         <BME />
+                    </div>
+                    <div className={styles.logo}>
+                        <Unity />
                     </div>
                 </ScrollAnimation>
             </div>
