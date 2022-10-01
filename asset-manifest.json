@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.946fcb09.css",
-    "main.js": "/ReactCV/static/js/main.612e16dc.js",
+    "main.css": "/ReactCV/static/css/main.f7ec3072.css",
+    "main.js": "/ReactCV/static/js/main.b347fd20.js",
     "static/js/787.bbc21cb1.chunk.js": "/ReactCV/static/js/787.bbc21cb1.chunk.js",
     "static/media/City.png": "/ReactCV/static/media/City.1cfa61fa20966318ee1c.png",
     "static/media/Johny.png": "/ReactCV/static/media/Johny.78404fad6910df7c0f9e.png",
     "static/media/Rewind.png": "/ReactCV/static/media/Rewind.9e5fa31115020d5d3199.png",
     "static/media/ghostboy_gardener.png": "/ReactCV/static/media/ghostboy_gardener.34067c8b19f60213c3d3.png",
+    "static/media/sofatutor.jpg": "/ReactCV/static/media/sofatutor.f00db3b9c3317e70f7b3.jpg",
     "static/media/Crowd.png": "/ReactCV/static/media/Crowd.1a9f6a624026c4d2448e.png",
     "static/media/Marching.png": "/ReactCV/static/media/Marching.9b4d9159ececbc9db5c9.png",
     "static/media/duplicate.png": "/ReactCV/static/media/duplicate.de76b8c2476c25eac9c0.png",
@@ -28,12 +29,12 @@
     "static/media/skills.svg": "/ReactCV/static/media/skills.8db5372d5e4d8c4d7c442b1ffd300900.svg",
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
     "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
-    "main.946fcb09.css.map": "/ReactCV/static/css/main.946fcb09.css.map",
-    "main.612e16dc.js.map": "/ReactCV/static/js/main.612e16dc.js.map",
+    "main.f7ec3072.css.map": "/ReactCV/static/css/main.f7ec3072.css.map",
+    "main.b347fd20.js.map": "/ReactCV/static/js/main.b347fd20.js.map",
     "787.bbc21cb1.chunk.js.map": "/ReactCV/static/js/787.bbc21cb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.946fcb09.css",
-    "static/js/main.612e16dc.js"
+    "static/css/main.f7ec3072.css",
+    "static/js/main.b347fd20.js"
   ]
 }
