@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.35a4b153.css",
-    "main.js": "/ReactCV/static/js/main.8cee1e58.js",
+    "main.css": "/ReactCV/static/css/main.9ff0749a.css",
+    "main.js": "/ReactCV/static/js/main.1f7a2041.js",
     "static/js/787.bbc21cb1.chunk.js": "/ReactCV/static/js/787.bbc21cb1.chunk.js",
     "static/media/City.png": "/ReactCV/static/media/City.1cfa61fa20966318ee1c.png",
     "static/media/Johny.png": "/ReactCV/static/media/Johny.78404fad6910df7c0f9e.png",
@@ -29,12 +29,12 @@
     "static/media/skills.svg": "/ReactCV/static/media/skills.8db5372d5e4d8c4d7c442b1ffd300900.svg",
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
     "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
-    "main.35a4b153.css.map": "/ReactCV/static/css/main.35a4b153.css.map",
-    "main.8cee1e58.js.map": "/ReactCV/static/js/main.8cee1e58.js.map",
+    "main.9ff0749a.css.map": "/ReactCV/static/css/main.9ff0749a.css.map",
+    "main.1f7a2041.js.map": "/ReactCV/static/js/main.1f7a2041.js.map",
     "787.bbc21cb1.chunk.js.map": "/ReactCV/static/js/787.bbc21cb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35a4b153.css",
-    "static/js/main.8cee1e58.js"
+    "static/css/main.9ff0749a.css",
+    "static/js/main.1f7a2041.js"
   ]
 }
