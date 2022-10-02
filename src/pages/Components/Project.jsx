@@ -18,7 +18,7 @@ class Project extends React.Component {
             <div className={styles.project}>
                 <div className={styles.fullImage}  onClick={() => this.onImageClicked(false)}>
                     <div className={styles.grid}>
-                        <div>
+                        <div className={styles.card}>
                             <div className={styles.title}>{prop.proj.title}</div>
                             <img src={prop.proj.image} hidden={!prop.proj.image} alt="" className={styles.image}/>
                             <div className={styles.overlay}></div>
@@ -56,9 +56,9 @@ class Project extends React.Component {
                     <img src={prop.proj.image} hidden={!prop.proj.image} alt="" className={styles.background} onClick={() => this.onImageClicked(true)}/>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
-                    <div className={styles.title}>{prop.proj.title}</div>
-                    <div className={styles.details}>{prop.proj.specific.map(item => (<div>{item}</div>))}</div>
-                    <div className={styles.links}>{links}</div>
+                    <div key="title" className={styles.title} onClick={() => this.onImageClicked(true)}>{prop.proj.title}</div>
+                    <div key="details" className={styles.details} onClick={() => this.onImageClicked(true)}>{prop.proj.specific.map((item, id) => (<div key={id}>{item}</div>))}</div>
+                    <div key="links" className={styles.links}>{links}</div>
                 </ScrollAnimation>
             </div>)
         }
