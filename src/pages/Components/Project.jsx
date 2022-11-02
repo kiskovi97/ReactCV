@@ -43,7 +43,7 @@ class Project extends React.Component {
                 links.push((<div key="android" className={styles.link}><a href={prop.proj.android} hidden={!prop.proj.android}>PLAY STORE</a></div>))
     
             if (prop.proj.youtube)
-                links.push((<div key="youtube" className={styles.link}><a href={prop.proj.youtube} hidden={!prop.proj.github}>YOUTUBE</a></div>))
+                links.push((<div key="youtube" className={styles.link}><a href={prop.proj.youtube} hidden={!prop.proj.youtube}>YOUTUBE</a></div>))
     
             if (prop.proj.pdf)
                 links.push((<div key="pdf" className={styles.link}><a href={prop.proj.pdf} hidden={!prop.proj.pdf}>THESIS INFORMATION</a></div>))

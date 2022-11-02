@@ -256,6 +256,8 @@ export var projects = [
             "Automated level testing"
         ],
         image: image_ghostboy,
+        website: "https://store.steampowered.com/app/2146560/Ghostboy",
+        youtube: "https://www.youtube.com/watch?v=Ot-KEh7Y5fs"
     }
 ]
 
