@@ -1,24 +1,9 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.9ff0749a.css",
-    "main.js": "/ReactCV/static/js/main.ab0c1192.js",
+    "main.js": "/ReactCV/static/js/main.5dc07547.js",
     "static/js/787.bbc21cb1.chunk.js": "/ReactCV/static/js/787.bbc21cb1.chunk.js",
-    "static/media/City.png": "/ReactCV/static/media/City.1cfa61fa20966318ee1c.png",
-    "static/media/Johny.png": "/ReactCV/static/media/Johny.78404fad6910df7c0f9e.png",
-    "static/media/Rewind.png": "/ReactCV/static/media/Rewind.9e5fa31115020d5d3199.png",
     "static/media/ghostboy_gardener02Color.png": "/ReactCV/static/media/ghostboy_gardener02Color.6e53d069911bfd13c20a.png",
-    "static/media/sofatutor.jpg": "/ReactCV/static/media/sofatutor.f00db3b9c3317e70f7b3.jpg",
-    "static/media/Crowd.png": "/ReactCV/static/media/Crowd.1a9f6a624026c4d2448e.png",
-    "static/media/Marching.png": "/ReactCV/static/media/Marching.9b4d9159ececbc9db5c9.png",
-    "static/media/duplicate.png": "/ReactCV/static/media/duplicate.de76b8c2476c25eac9c0.png",
-    "static/media/cooking_book.jpg": "/ReactCV/static/media/cooking_book.cf36b453e41c5c290fbb.jpg",
-    "static/media/Deeper.png": "/ReactCV/static/media/Deeper.f6989982d634d9a959f5.png",
-    "static/media/parkett.jpg": "/ReactCV/static/media/parkett.f6426c0a247213ceb9f0.jpg",
-    "static/media/thebookclub.jpg": "/ReactCV/static/media/thebookclub.2b0cfd06f903bd6a089d.jpg",
-    "static/media/bookrclass.jpg": "/ReactCV/static/media/bookrclass.44a27126f0bf1e92c4ea.jpg",
-    "static/media/image_integration.jpg": "/ReactCV/static/media/image_integration.43eb8c94826daded8a74.jpg",
-    "static/media/thewayout.jpg": "/ReactCV/static/media/thewayout.65cf874efca0e7cc3765.jpg",
-    "static/media/ghostboy.jpg": "/ReactCV/static/media/ghostboy.d96a5a5f9ab8e686914e.jpg",
     "static/media/bme.svg": "/ReactCV/static/media/bme.c84f271596460ed5cec78cfb859e0c94.svg",
     "static/media/bookr_logo.svg": "/ReactCV/static/media/bookr_logo.5c6dac3c541385efe529b48e70f3bb17.svg",
     "static/media/instagram.svg": "/ReactCV/static/media/instagram.78c3e341c4d09c768745059e2e70a9a1.svg",
@@ -30,11 +15,11 @@
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
     "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
     "main.9ff0749a.css.map": "/ReactCV/static/css/main.9ff0749a.css.map",
-    "main.ab0c1192.js.map": "/ReactCV/static/js/main.ab0c1192.js.map",
+    "main.5dc07547.js.map": "/ReactCV/static/js/main.5dc07547.js.map",
     "787.bbc21cb1.chunk.js.map": "/ReactCV/static/js/787.bbc21cb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ff0749a.css",
-    "static/js/main.ab0c1192.js"
+    "static/js/main.5dc07547.js"
   ]
 }
