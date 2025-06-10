@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.9ff0749a.css",
-    "main.js": "/ReactCV/static/js/main.4f8c0072.js",
+    "main.js": "/ReactCV/static/js/main.32a27221.js",
     "static/js/787.bbc21cb1.chunk.js": "/ReactCV/static/js/787.bbc21cb1.chunk.js",
     "static/media/ghostboy_gardener02Color.png": "/ReactCV/static/media/ghostboy_gardener02Color.6e53d069911bfd13c20a.png",
     "static/media/bme.svg": "/ReactCV/static/media/bme.c84f271596460ed5cec78cfb859e0c94.svg",
@@ -15,11 +15,11 @@
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
     "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
     "main.9ff0749a.css.map": "/ReactCV/static/css/main.9ff0749a.css.map",
-    "main.4f8c0072.js.map": "/ReactCV/static/js/main.4f8c0072.js.map",
+    "main.32a27221.js.map": "/ReactCV/static/js/main.32a27221.js.map",
     "787.bbc21cb1.chunk.js.map": "/ReactCV/static/js/787.bbc21cb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ff0749a.css",
-    "static/js/main.4f8c0072.js"
+    "static/js/main.32a27221.js"
   ]
 }
