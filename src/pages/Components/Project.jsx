@@ -4,6 +4,8 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { useState } from 'react';
 
 var Project = ({ proj }) => {
+    
+    var imageLink = proj?.image?.replace("static/media", "images");
         var [clicked, setClicked] = useState(false);
         if (clicked) {
             return (
@@ -12,7 +14,7 @@ var Project = ({ proj }) => {
                     <div className={styles.grid}>
                         <div className={styles.card}>
                             <div className={styles.title}>{proj.title}</div>
-                            <img src={proj.image} hidden={!proj.image} alt="" className={styles.image}/>
+                            <img src={imageLink} hidden={!imageLink} alt="" className={styles.image}/>
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.details}>
@@ -37,7 +39,7 @@ var Project = ({ proj }) => {
                 
             return (<div className={styles.project}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
-                    <img src={proj.image} hidden={!proj.image} alt="" className={styles.background} onClick={() => setClicked(true)}/>
+                    <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} onClick={() => setClicked(true)}/>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
                     <div key="title" className={styles.title} onClick={() => setClicked(true)}>{proj.title}</div>
