@@ -27,22 +27,14 @@ var Project = ({ proj }) => {
         }
 
         if (proj) {
-            var links = [];
-            if (proj.github)
-                links.push((<div key="github" className={styles.link}><a href={proj.github} hidden={!proj.github}>GITHUB</a></div>))
-    
-            if (proj.android)
-                links.push((<div key="android" className={styles.link}><a href={proj.android} hidden={!proj.android}>PLAY STORE</a></div>))
-    
-            if (proj.youtube)
-                links.push((<div key="youtube" className={styles.link}><a href={proj.youtube} hidden={!proj.youtube}>YOUTUBE</a></div>))
-    
-            if (proj.pdf)
-                links.push((<div key="pdf" className={styles.link}><a href={proj.pdf} hidden={!proj.pdf}>THESIS INFORMATION</a></div>))
+            var links = proj.links.map((link) => 
+                (<div key={link.type} 
+                    className={styles.link}>
+                        <a href={proj.github} hidden={!link.link}>
+                            {link.type?.toUpperCase()}
+                        </a>
+                    </div>))
                 
-            if (proj.website)
-                links.push((<div key="website" className={styles.link}><a href={proj.website} hidden={!proj.website}>WEBSITE</a></div>))
-    
             return (<div className={styles.project}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
                     <img src={proj.image} hidden={!proj.image} alt="" className={styles.background} onClick={() => setClicked(true)}/>
