@@ -30,7 +30,7 @@ var Project = ({ proj }) => {
             var links = proj.links.map((link) => 
                 (<div key={link.type} 
                     className={styles.link}>
-                        <a href={proj.github} hidden={!link.link}>
+                        <a href={link.link} hidden={!link.link}>
                             {link.type?.toUpperCase()}
                         </a>
                     </div>))
