@@ -3,7 +3,6 @@ import React from 'react'
 import styles from './Page.module.css'
 import gStyles from './Grid.module.css'
 import Me from './Components/Me'
-import { projects } from './References.jsx'
 import { Unity } from './Icons'
 import Project from './Components/Project'
 import { useState, useEffect } from 'react';
