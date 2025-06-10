@@ -15,7 +15,7 @@ var Me = () =>
                 <div className={styles.frontTitle}>
                     <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce offset={20}>
                         <div className={styles.title} >
-                            Kovács Gergő
+                            Gergo Kovacs
                         </div>
                     </ScrollAnimation>
                     <ScrollAnimation className={styles.logos} animateIn="fadeInLeft" animateOut="fadeOutLeft" offset={180} animateOnce>
@@ -33,7 +33,7 @@ var Me = () =>
                     <h1>I'm a Computer Science Engineer and Game Developer.</h1>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" offset={180} animateOnce>
-                    I make games professionaly and for fun too.
+                    I make games and apps professionaly and for fun too.
                     I like to pursue interesting ideas and concepts and test them out first hand.
                     If you are interested in my work feel free to look around and contact me if you want.
                 </ScrollAnimation>

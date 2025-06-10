@@ -1,31 +1,23 @@
 import React from 'react'
 import styles from './Project.module.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+import { useState, useEffect } from 'react';
 
-class Project extends React.Component {
-    state = {
-        clicked: false
-    }
-
-    onImageClicked = (value) => {
-        this.setState({clicked: value});
-    }
-
-    render () {
-        var prop = this.props;
-        if (this.state.clicked) {
+var Project = ({ proj }) => {
+        var [clicked, setClicked] = useState(false);
+        if (clicked) {
             return (
             <div className={styles.project}>
-                <div className={styles.fullImage}  onClick={() => this.onImageClicked(false)}>
+                <div className={styles.fullImage}  onClick={() => setClicked(false)}>
                     <div className={styles.grid}>
                         <div className={styles.card}>
-                            <div className={styles.title}>{prop.proj.title}</div>
-                            <img src={prop.proj.image} hidden={!prop.proj.image} alt="" className={styles.image}/>
+                            <div className={styles.title}>{proj.title}</div>
+                            <img src={proj.image} hidden={!proj.image} alt="" className={styles.image}/>
                             <div className={styles.overlay}></div>
                         </div>
                         <div className={styles.details}>
-                            <div className={styles.description}>{prop.proj.details}</div>
-                            {prop.proj.specific.map(item => (<div className={styles.listItem}>{item}</div>))}
+                            <div className={styles.description}>{proj.details}</div>
+                            {proj.specific.map(item => (<div className={styles.listItem}>{item}</div>))}
                         </div>
 
                     </div>
@@ -34,30 +26,30 @@ class Project extends React.Component {
             </div>)
         }
 
-        if (prop.proj) {
+        if (proj) {
             var links = [];
-            if (prop.proj.github)
-                links.push((<div key="github" className={styles.link}><a href={prop.proj.github} hidden={!prop.proj.github}>GITHUB</a></div>))
+            if (proj.github)
+                links.push((<div key="github" className={styles.link}><a href={proj.github} hidden={!proj.github}>GITHUB</a></div>))
     
-            if (prop.proj.android)
-                links.push((<div key="android" className={styles.link}><a href={prop.proj.android} hidden={!prop.proj.android}>PLAY STORE</a></div>))
+            if (proj.android)
+                links.push((<div key="android" className={styles.link}><a href={proj.android} hidden={!proj.android}>PLAY STORE</a></div>))
     
-            if (prop.proj.youtube)
-                links.push((<div key="youtube" className={styles.link}><a href={prop.proj.youtube} hidden={!prop.proj.youtube}>YOUTUBE</a></div>))
+            if (proj.youtube)
+                links.push((<div key="youtube" className={styles.link}><a href={proj.youtube} hidden={!proj.youtube}>YOUTUBE</a></div>))
     
-            if (prop.proj.pdf)
-                links.push((<div key="pdf" className={styles.link}><a href={prop.proj.pdf} hidden={!prop.proj.pdf}>THESIS INFORMATION</a></div>))
+            if (proj.pdf)
+                links.push((<div key="pdf" className={styles.link}><a href={proj.pdf} hidden={!proj.pdf}>THESIS INFORMATION</a></div>))
                 
-            if (prop.proj.website)
-                links.push((<div key="website" className={styles.link}><a href={prop.proj.website} hidden={!prop.proj.website}>WEBSITE</a></div>))
+            if (proj.website)
+                links.push((<div key="website" className={styles.link}><a href={proj.website} hidden={!proj.website}>WEBSITE</a></div>))
     
             return (<div className={styles.project}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
-                    <img src={prop.proj.image} hidden={!prop.proj.image} alt="" className={styles.background} onClick={() => this.onImageClicked(true)}/>
+                    <img src={proj.image} hidden={!proj.image} alt="" className={styles.background} onClick={() => setClicked(true)}/>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
-                    <div key="title" className={styles.title} onClick={() => this.onImageClicked(true)}>{prop.proj.title}</div>
-                    <div key="details" className={styles.details} onClick={() => this.onImageClicked(true)}>{prop.proj.specific.map((item, id) => (<div key={id}>{item}</div>))}</div>
+                    <div key="title" className={styles.title} onClick={() => setClicked(true)}>{proj.title}</div>
+                    <div key="details" className={styles.details} onClick={() => setClicked(true)}>{proj.specific.map((item, id) => (<div key={id}>{item}</div>))}</div>
                     <div key="links" className={styles.links}>{links}</div>
                 </ScrollAnimation>
             </div>)

@@ -13,11 +13,11 @@ var About = () =>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
                     <h2>Skills</h2>
                     <h3>Programming Languages</h3>
-                    <div>C#, Html, Css, SQL, Javascript, Typescript, Java, C, C++</div>
+                    <div>C#, Html, Css, SQL, Javascript, Typescript, Java, Kotlin, C, C++</div>
                     <h3>Environments</h3>
                     <div>Unity, React, NodeJs, .NET, Android Studio, AWS</div>
                     <h3>Roles</h3>
-                    <div>Architect, Project Managmer, Mentor, Graphic Designer, Public Relations Manager</div>
+                    <div>Developer, Architect, Project Managmer, Mentor, Game Designer, Public Relations Manager</div>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
                     <div className={styles.logo}>
@@ -30,8 +30,9 @@ var About = () =>
             <div className={gStyles.gridsmall}>
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
                     <h3>Currently working at:</h3>
-                    <h4>2020 - <a href={"https://corp.bookrkids.com/"}>Bookr Kids</a> - Unity developer</h4>
+                    <h4>2023 - <a href={"https://www.breakpoint.one/"}>Breakpoint One</a> - Unity VR/AR developer</h4>
                     <h3>Previous Jobs</h3>
+                    <h4>2020 - 2023 <a href={"https://corp.bookrkids.com/"}>Bookr Kids</a> - Unity developer</h4>
                     <h4>2019 - 2020 <a href={"https://www.evosoft.hu/"}>Evosoft</a> - .NET developer</h4>
                     <h4>2018 - 2019 <a href={"https://atolldev.com/"}>Atoldev</a> - Java fullstack developer</h4>
                 </ScrollAnimation>
