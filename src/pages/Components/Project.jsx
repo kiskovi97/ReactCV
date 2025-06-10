@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Project.module.css'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 var Project = ({ proj }) => {
         var [clicked, setClicked] = useState(false);
