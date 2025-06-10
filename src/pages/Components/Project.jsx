@@ -58,6 +58,5 @@ var Project = ({ proj }) => {
     
         return (<div>NoContentAdded</div>)
     }
-}
 
 export default Project
