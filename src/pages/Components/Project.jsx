@@ -1,5 +1,5 @@
 import styles from './Project.module.css'
-import ScrollAnimation from 'react-animate-on-scroll'
+import { motion } from "framer-motion";
 
 var Project = ({ proj }) => {
     
@@ -19,7 +19,12 @@ var Project = ({ proj }) => {
     var date = new Date(proj.updated);
     return (
     <div>
-        <ScrollAnimation animateIn={"fadeIn"} animateOnce duration={0.6} offset={0}>
+            <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5 }}
+            >
                 <div className={styles.project}>
                     <div className={styles.image} >
                         <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
@@ -30,7 +35,7 @@ var Project = ({ proj }) => {
                         <div key="links" className={styles.links}>{links}</div>
                     </div>
                 </div>
-        </ScrollAnimation>
+            </motion.div>
         </div>)
         }
     

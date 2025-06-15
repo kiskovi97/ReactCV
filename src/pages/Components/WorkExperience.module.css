@@ -1,0 +1,20 @@
+.main {
+    width: 20rem;
+    background-color: var(--lightBackground);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primaryText);
+}
+
+
+@media only screen and (max-width: 60em) {
+    .main {
+        width: 90%;
+    }
+}

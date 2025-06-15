@@ -16,6 +16,7 @@ export const fetchData = async () =>
         return {success: false, message: error.message};
     }
 }
+
 export const fetchDataByTag = async (tag) =>
 {
     await initAWS();
