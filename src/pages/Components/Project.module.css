@@ -1,203 +1,105 @@
-@value colors: "../colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark, linkColor from colors;
-
-.links > div {
-    display: inline;
-    margin-right: 1em;
-}
-
-.links > .link > a {
-    color: linkColor;
-    text-decoration: unset;
-    font-weight: bold;
-}
-
-.title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-.details {
-    line-height: 26px;
-    font-size: 18px;
-    margin-bottom: 1em;
-}
-
 .project {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    margin-bottom: 2em;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    overflow: hidden;
 }
-.project > div {
-    padding: 1em;
+
+.project:hover {
+    cursor: pointer;
+}
+
+.project .image {
+    width: 25em;
+    height: 12em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    overflow: hidden;
 }
 
 .project > div > img.background {
-    width: 20em;
-    height: 10em;
+    width: 25em;
+    height: 12em;
     object-fit: cover;
-    animation: unset;
-    margin-top: 0.5em;
-    opacity: 0.5;
-    transition: width 0.2s, height 0.2s;
-    border-radius: 5px;
+    filter: none ;
 }
 
-.project .fullImage {
-    position: fixed;
-    z-index: 2;
-    height:100%;
-    width:100%;
-    top: 0;
-    left: 0;
-    background-color: dark;
-    padding: 0;
+.project .title {
+    font-weight: 700;
+    margin-bottom: 0.5em;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 80em;
-    margin: 5em auto;
-}
-
-.fullImage .details {
-    max-width: 30em;
-    margin: auto;
-    color: primarylight;
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.fullImage  .details .description {
-    margin-bottom: 2em;
-    font-size: bold;
-    line-height: 30px;
-}
-
-.fullImage .details .listItem {
-    padding-left: 1em;
-}
-
-.grid > div {
-    position: relative;
-}
-
-.card {
-    top: 0;
-    height: 25em;
-    width: 35em;
-    position: relative;
-    margin: auto;
-}
-
-.card > div {
-    width: 100%;
+.project .description {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    justify-content: space-evenly;
 }
 
-.card div.title{
-    font-size: 5em;
-    font-weight: bold;
-    color: secondarylight;
-    filter: drop-shadow(4px 5px 20px rgb(0, 0, 0));
-    line-height: 1em;
-    height: min-content;
-    position: absolute;
-    padding: 0.2em;
-    width: calc(100% - 0.4em);
-    bottom: 0;
-    margin-bottom: 0.2em;
+.project .description .details {
+    font-size: small;
+    line-height: 20px;
+    max-height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
-.fullImage .image {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
-    margin: 0;
-    border-radius: 5px;
-}
-
-.fullImage .overlay {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, #433a8b00 0%, #21186b 100%);
-}
-
-.project .fullImage .details h2, .project .fullImage .details  h1,.project .fullImage .details  h3 {
-    color: secondarylight;
-}
-
-.fullImage img {
-    display: block;
-    width: auto;
-    height: 30%;
-    margin: 1em auto;
-    object-fit: cover;
-}
-
-.project > div > img.background:hover {
-    transform: scale(1.03, 1.03) ;
-    opacity: 1;
-    animation-name: hover;
-    animation-duration: 0.2s;
-}
-
-@keyframes hover {
-    from {
-        transform: scale(1, 1) ;
-    }
-    to {
-        transform: scale(1.03, 1.03) ;
-    }
-  }
 
 @media only screen and (max-width: 80em) {
-    .project > div > img.background, .project > div > img.background:hover {
-        width: 0;
-        height: 0;
+
+    .project {
+        font-size: 0.9em;
+    }
+
+    .project .details {
+        font-size: 0;
+        padding: 0;
         margin: 0;
     }
 }
 
-@media only screen and (max-width: 70em) {
 
-    .grid {
-        margin-top: 1em;
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
 
-    .card {
-        height: 10em;
+@media only screen and (max-width: 60em) {
+
+    .project {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
         width: 100%;
     }
 
-    .card div.title {
-        font-size: 3em;
+    .project .image {
+        width: 8em;
+        height: 8em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        overflow: hidden;
+        filter: drop-shadow(0px 5px 10px rgba(99, 2, 2, 0.199));
     }
 
-    .fullImage .details {
-        font-size: 14px;
-        line-height: 30px;
+    .project .description{
+        padding: 0;
     }
 
-    .fullImage  .details .description {
-        margin-bottom: 1em;
+    .project .description .details {
+        font-size: 0.7rem;
+        max-width: 25rem;
+        line-height: 0.8rem;
     }
-}
 
+    .project .title {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
 
-@media only screen and (max-width: 800px) {
-    .project > div {
-        padding: 0em;
+    .project > div > img.background {
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        filter: none ;
     }
 }

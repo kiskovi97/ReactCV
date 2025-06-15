@@ -1,35 +1,14 @@
-import React from 'react'
 import styles from './Project.module.css'
 import ScrollAnimation from 'react-animate-on-scroll'
-import { useState } from 'react';
 
 var Project = ({ proj }) => {
     
     var imageLink = proj?.image?.replace("static/media", "images");
-        var [clicked, setClicked] = useState(false);
-        if (clicked) {
-            return (
-            <div className={styles.project}>
-                <div className={styles.fullImage}  onClick={() => setClicked(false)}>
-                    <div className={styles.grid}>
-                        <div className={styles.card}>
-                            <div className={styles.title}>{proj.title}</div>
-                            <img src={imageLink} hidden={!imageLink} alt="" className={styles.image}/>
-                            <div className={styles.overlay}></div>
-                        </div>
-                        <div className={styles.details}>
-                            <div className={styles.description}>{proj.details}</div>
-                            {proj.specific.map(item => (<div className={styles.listItem}>{item}</div>))}
-                        </div>
+    if(imageLink.startsWith("./"))
+        imageLink = imageLink.replace("./", "http://kiskovi97.github.io/ReactCV/");
 
-                    </div>
-                </div>
-                    
-            </div>)
-        }
-
-        if (proj) {
-            var links = proj.links.map((link) => 
+    if (proj) {
+        var links = proj.links.map((link) => 
                 (<div key={link.type} 
                     className={styles.link}>
                         <a href={link.link} hidden={!link.link}>
@@ -37,16 +16,22 @@ var Project = ({ proj }) => {
                         </a>
                     </div>))
                 
-            return (<div className={styles.project}>
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutLeft" animateOnce >
-                    <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} onClick={() => setClicked(true)}/>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutRight" animateOnce >
-                    <div key="title" className={styles.title} onClick={() => setClicked(true)}>{proj.title}</div>
-                    <div key="details" className={styles.details} onClick={() => setClicked(true)}>{proj.specific.map((item, id) => (<div key={id}>{item}</div>))}</div>
-                    <div key="links" className={styles.links}>{links}</div>
-                </ScrollAnimation>
-            </div>)
+    var date = new Date(proj.updated);
+    return (
+    <div>
+        <ScrollAnimation animateIn={"fadeIn"} animateOnce duration={0.6} offset={0}>
+                <div className={styles.project}>
+                    <div className={styles.image} >
+                        <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
+                    </div>
+                    <div className={styles.description} >
+                        <div className={styles.title}>{proj.title} - {date.getFullYear()}</div>
+                        <div className={styles.details}>{proj.details}</div>
+                        <div key="links" className={styles.links}>{links}</div>
+                    </div>
+                </div>
+        </ScrollAnimation>
+        </div>)
         }
     
     

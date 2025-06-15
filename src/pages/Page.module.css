@@ -1,97 +1,30 @@
-@value colors: "./colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark, secondarylightShadow, primarydarkShadow, linkColor from colors;
-
 .page {
     height: max-content;
     min-height: 90vh;
-    margin: 0;
+    max-width: min(90rem, 90%);
+    margin: 0 auto;
     text-align: left;
-    background-color: primarydark;
-    color: primarylight;
-    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.page a {
-    color: linkColor;
-    text-decoration: unset;
-    font-weight: bold;
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 90vw;
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.page > div:nth-child(odd){
-    background-color: primarydark;
-    color: primarylight;
-    background: linear-gradient(0deg, primarydarkShadow 0%, rgba(0, 0, 0, 0) 40%);
-}
-
-.page > div:nth-child(odd) .logo svg path, .page > div:nth-child(odd) .logo svg line, .page > div:nth-child(odd) .logo svg polyline, .page > div:nth-child(odd) .logo svg polygon{
-    fill: secondarylight;
-    color: secondarylight;
-    stroke: secondarylight;
-}
-
-.page > div:nth-child(even) .logo svg path, .page > div:nth-child(even) .logo svg line, .page > div:nth-child(even) .logo svg polyline, .page > div:nth-child(even) .logo svg polygon{
-    fill: primarydark;
-    color: primarydark;
-    stroke: primarydark;
-}
-
-.page > div:nth-child(odd) {
-    color: secondarylight;
-}
-
-.page > div:nth-child(even) {
-    background-color: secondarylight;
-    color: secondarydark;
-    background: linear-gradient(0deg, secondarylightShadow 0%, secondarylight 40%);
-}
-
-.page > div:nth-child(even) {
-    color: primarydark;
-}
-
-.page > div {
-    position: relative;
-    min-height: 30em;
-    padding: 2em;
-}
-
-img.minilogo, .minilogo img{
-    width: 20pt;
-    height: 20pt;
-    margin: 10pt;
-    object-fit: scale-down;
-    animation: unset;
-    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.315));
-}
-
-.minilogo svg {
-    width: 5em;
-    height: 5em;
-    margin: 10pt;
-    object-fit: scale-down;
-    animation: unset;
-    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.315));
-}
-
-.logo, .logo img, .logo svg {
-    height: 8em;
-    width: 8em;
-    object-fit: scale-down;
-    filter: drop-shadow(0px 5px 5px rgba(34, 34, 34, 0.082));
-}
-
-@media only screen and (max-width: 1400px) {
-
-    .page {
-        font-size: 1em;
-    }
-}
-
-
-@media only screen and (max-width: 800px) {
-
-
-    .page {
-        font-size: 1em;
+@media only screen and (max-width: 60em) {
+    .list {
+        margin: 0 auto;
+        width: max-content;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 }

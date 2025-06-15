@@ -1,9 +1,4 @@
-import ScrollAnimation from 'react-animate-on-scroll'
-import React from 'react'
 import styles from './Page.module.css'
-import gStyles from './Grid.module.css'
-import Me from './Components/Me'
-import { Unity } from './Icons'
 import Project from './Components/Project'
 import { useState, useEffect } from 'react';
 import { fetchData } from '../dynamoService';
@@ -15,7 +10,7 @@ var Home = () =>
         const result = await fetchData();
         if (result.success) {
             console.log(result.data);
-            setDBData([...result.data].sort((first, second) => first.title.localeCompare(second.title)));
+            setDBData([...result.data].sort((first, second) => second.updated.localeCompare(first.updated)));
         } else {
             alert("Error Fetching Data: " + result.message);
         }
@@ -27,20 +22,31 @@ var Home = () =>
     return(
     <div className={styles.page}>
         <div>
-            <Me />
+            <h1>My Projects</h1>
+            <div>A collection of my work, showcasing my skills and experience in game development, application development, and web development.</div>
         </div>
-        <div>
-            <div className={gStyles.grid}>
-                <div>
-                    {dbData
-                        .filter(item => item.tags.includes("steam"))
-                        .map((item, index) => (<Project proj={item} index={index}/>))}
-                </div>
-                <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutDown" animateOnce>
-                    <div className={styles.logo}>
-                        <Unity />
-                    </div>
-                </ScrollAnimation>
+        <div >
+            <h1>Games</h1>
+            <div className={styles.list}>
+                {dbData
+                    .filter(item => item.tags.includes("game"))
+                    .map((item, index) => (<Project proj={item} index={index}/>))}
+            </div>
+        </div>
+        <div >
+            <h1>Apps</h1>
+            <div className={styles.list}>
+                {dbData
+                    .filter(item => item.tags.includes("app"))
+                    .map((item, index) => (<Project proj={item} index={index}/>))}
+            </div>
+        </div>
+        <div >
+            <h1>Experiments</h1>
+            <div className={styles.list}>
+                {dbData
+                    .filter(item => item.tags.includes("bme"))
+                    .map((item, index) => (<Project proj={item} index={index}/>))}
             </div>
         </div>
 

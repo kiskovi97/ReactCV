@@ -1,26 +1,26 @@
-@value colors: "./pages/colors.css";
-@value primarydark, primarylight, secondarydark, secondarylight, dark, linkColor from colors;
+:root {
+  --background: #0e2336;
+  --lightBackground: #21364A;
+  --darkBackground: #0F1A24;
+  --secondaryText: #8FADCC;
+  --primaryText: #E5E8EB;
+}
 
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: primarydark;
+  background-color: var(--background);
+  color: var(--secondaryText);
+    scrollbar-color: var(--primaryText) rgba(255, 255, 255, 0);
 }
 
-a {
-  color: linkColor;
+a, h1, h2, h3, h4, h5, h6 {
+  color: var(--primaryText);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events:none; 
 }
