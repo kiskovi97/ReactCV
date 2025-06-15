@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.9ff0749a.css",
-    "main.js": "/ReactCV/static/js/main.32a27221.js",
-    "static/js/787.bbc21cb1.chunk.js": "/ReactCV/static/js/787.bbc21cb1.chunk.js",
+    "main.css": "/ReactCV/static/css/main.975a5c89.css",
+    "main.js": "/ReactCV/static/js/main.ba875222.js",
+    "static/js/488.778f358f.chunk.js": "/ReactCV/static/js/488.778f358f.chunk.js",
     "static/media/ghostboy_gardener02Color.png": "/ReactCV/static/media/ghostboy_gardener02Color.6e53d069911bfd13c20a.png",
     "static/media/bme.svg": "/ReactCV/static/media/bme.c84f271596460ed5cec78cfb859e0c94.svg",
     "static/media/bookr_logo.svg": "/ReactCV/static/media/bookr_logo.5c6dac3c541385efe529b48e70f3bb17.svg",
@@ -14,12 +14,12 @@
     "static/media/skills.svg": "/ReactCV/static/media/skills.8db5372d5e4d8c4d7c442b1ffd300900.svg",
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
     "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
-    "main.9ff0749a.css.map": "/ReactCV/static/css/main.9ff0749a.css.map",
-    "main.32a27221.js.map": "/ReactCV/static/js/main.32a27221.js.map",
-    "787.bbc21cb1.chunk.js.map": "/ReactCV/static/js/787.bbc21cb1.chunk.js.map"
+    "main.975a5c89.css.map": "/ReactCV/static/css/main.975a5c89.css.map",
+    "main.ba875222.js.map": "/ReactCV/static/js/main.ba875222.js.map",
+    "488.778f358f.chunk.js.map": "/ReactCV/static/js/488.778f358f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ff0749a.css",
-    "static/js/main.32a27221.js"
+    "static/css/main.975a5c89.css",
+    "static/js/main.ba875222.js"
   ]
 }
