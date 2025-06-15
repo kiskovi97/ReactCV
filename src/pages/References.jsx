@@ -12,7 +12,7 @@ var References = () =>
         const result = await fetchData();
         if (result.success) {
             console.log(result.data);
-            setDBData([...result.data].sort((first, second) => first.title.localeCompare(second.title)));
+            setDBData([...result.data].sort((first, second) => second.updated.localeCompare(first.updated)));
         } else {
             alert("Error Fetching Data: " + result.message);
         }
