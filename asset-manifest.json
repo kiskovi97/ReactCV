@@ -1,25 +1,19 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.975a5c89.css",
-    "main.js": "/ReactCV/static/js/main.ba875222.js",
+    "main.css": "/ReactCV/static/css/main.2568de44.css",
+    "main.js": "/ReactCV/static/js/main.cecc888e.js",
     "static/js/488.778f358f.chunk.js": "/ReactCV/static/js/488.778f358f.chunk.js",
     "static/media/ghostboy_gardener02Color.png": "/ReactCV/static/media/ghostboy_gardener02Color.6e53d069911bfd13c20a.png",
-    "static/media/bme.svg": "/ReactCV/static/media/bme.c84f271596460ed5cec78cfb859e0c94.svg",
-    "static/media/bookr_logo.svg": "/ReactCV/static/media/bookr_logo.5c6dac3c541385efe529b48e70f3bb17.svg",
     "static/media/instagram.svg": "/ReactCV/static/media/instagram.78c3e341c4d09c768745059e2e70a9a1.svg",
-    "static/media/android.svg": "/ReactCV/static/media/android.ab008d1371a4b3e814be2c7b0c9f54f8.svg",
-    "static/media/group.svg": "/ReactCV/static/media/group.805c3ae66fe2558c8b2228d360da926a.svg",
     "static/media/github.svg": "/ReactCV/static/media/github.237cbb85b0ab3f1af1fc131e57429d91.svg",
     "index.html": "/ReactCV/index.html",
-    "static/media/skills.svg": "/ReactCV/static/media/skills.8db5372d5e4d8c4d7c442b1ffd300900.svg",
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
-    "static/media/unity.svg": "/ReactCV/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
-    "main.975a5c89.css.map": "/ReactCV/static/css/main.975a5c89.css.map",
-    "main.ba875222.js.map": "/ReactCV/static/js/main.ba875222.js.map",
+    "main.2568de44.css.map": "/ReactCV/static/css/main.2568de44.css.map",
+    "main.cecc888e.js.map": "/ReactCV/static/js/main.cecc888e.js.map",
     "488.778f358f.chunk.js.map": "/ReactCV/static/js/488.778f358f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.975a5c89.css",
-    "static/js/main.ba875222.js"
+    "static/css/main.2568de44.css",
+    "static/js/main.cecc888e.js"
   ]
 }
