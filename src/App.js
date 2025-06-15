@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Error from './pages/Error';
@@ -10,13 +10,13 @@ function App() {
   return (
     <main className="App">
       <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home}  />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/work" component={Work} />
-        <Route exact path="/references" component={References} />
-        <Route component={Error} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={Home}  />
+        <Route exact path="/about" element={About} />
+        <Route exact path="/work" element={Work} />
+        <Route exact path="/references" element={References} />
+        <Route element={Error} />
+      </Routes>
     </main>
   );
 }
