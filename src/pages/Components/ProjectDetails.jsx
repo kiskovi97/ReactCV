@@ -3,10 +3,6 @@ import { motion } from "framer-motion";
 
 var ProjectDetails = ({ proj }) => {
     
-    var imageLink = proj?.image?.replace("static/media", "images");
-    if(imageLink.startsWith("./"))
-        imageLink = imageLink.replace("./", "http://kiskovi97.github.io/ReactCV/");
-
     if (proj) {
         var links = proj.links.map((link) => 
                 (<div key={link.type} 
@@ -15,6 +11,11 @@ var ProjectDetails = ({ proj }) => {
                             {link.type?.toUpperCase()}
                         </a>
                     </div>))
+
+                    
+    var imageLink = proj?.image?.replace("static/media", "images");
+    if(imageLink.startsWith("./"))
+        imageLink = imageLink.replace("./", "http://kiskovi97.github.io/ReactCV/");
                 
     var date = new Date(proj.updated);
     return (
