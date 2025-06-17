@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 var Project = () => {
     var query = window.location.href.split('/');
     var id = query[query.length - 1];
-    const [dbData, setDBData] = useState([]);
+    const [dbData, setDBData] = useState(null);
 
     const fetchAndSetData = async (id) => {
         const result = await fetchDataById(id);
