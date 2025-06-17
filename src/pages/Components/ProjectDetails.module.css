@@ -1,0 +1,67 @@
+.project {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 40em;
+    overflow: hidden;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.project .image {
+    margin: 0 auto;
+    width: 20em;
+    height: 12em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    overflow: hidden;
+}
+
+.project > div > img.background {
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    filter: none ;
+}
+
+.project .title {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.project .description {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.project .description .details {
+    font-size: small;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 80em) {
+    .project {
+        font-size: 0.9em;
+    }
+}
+
+
+
+@media only screen and (max-width: 60em) {
+
+    .project .description{
+        padding: 0.5rem;
+    }
+
+    .project .title {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
