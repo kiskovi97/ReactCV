@@ -1,7 +1,10 @@
 import styles from './Project.module.css'
 import { motion } from "framer-motion";
+import { useNavigate  } from 'react-router';
 
 var Project = ({ proj }) => {
+    const navigate = useNavigate();
+    const handleClick = (index) => navigate("/" + index);
     
     var imageLink = proj?.image?.replace("static/media", "images");
     if(imageLink.startsWith("./"))
@@ -15,7 +18,8 @@ var Project = ({ proj }) => {
                             {link.type?.toUpperCase()}
                         </a>
                     </div>))
-                
+     
+    var id = proj.id;           
     var date = new Date(proj.updated);
     return (
     <div>
@@ -25,7 +29,7 @@ var Project = ({ proj }) => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
             >
-                <div className={styles.project}>
+                <div className={styles.project}  onClick={() => handleClick("project/" + id)} >
                     <div className={styles.image} >
                         <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
                     </div>
