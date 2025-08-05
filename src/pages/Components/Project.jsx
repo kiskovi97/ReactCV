@@ -27,16 +27,18 @@ var Project = ({ proj }) => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
             >
-                <Link className={styles.project}  to={"/project/" + id} >
-                    <div className={styles.image} >
-                        <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
-                    </div>
-                    <div className={styles.description} >
-                        <div className={styles.title}>{proj.title} - {date.getFullYear()}</div>
-                        <div className={styles.details}>{proj.details}</div>
-                        <div key="links" className={styles.links}>{links}</div>
-                    </div>
-                </Link>
+                <div className={styles.project}>
+                    <Link  to={"/project/" + id} >
+                        <div className={styles.image} >
+                            <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
+                        </div>
+                    </Link>
+                        <div className={styles.description} >
+                            <div className={styles.title}>{proj.title} - {date.getFullYear()}</div>
+                            <div className={styles.details}>{proj.details}</div>
+                            <div key="links" className={styles.links}>{links}</div>
+                        </div>
+                </div>
             </motion.div>
         </div>)
         }

@@ -7,10 +7,6 @@
     overflow: hidden;
 }
 
-.project:hover {
-    cursor: pointer;
-}
-
 .project .image {
     width: 20em;
     height: 12em;
@@ -19,7 +15,7 @@
     overflow: hidden;
 }
 
-.project > div > img.background {
+.project .image  img.background {
     width: 100%;
     height: 12em;
     object-fit: cover;

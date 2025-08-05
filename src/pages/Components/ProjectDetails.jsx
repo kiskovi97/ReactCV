@@ -1,4 +1,4 @@
-import styles from './Project.module.css'
+import styles from './ProjectDetails.module.css'
 import { motion } from "framer-motion";
 
 var ProjectDetails = ({ proj }) => {
@@ -27,17 +27,17 @@ var ProjectDetails = ({ proj }) => {
                 transition={{ duration: 0.5 }}
                 >
                     <div className={styles.project}>
-                        <div className={styles.image} >
-                            <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
-                        </div>
                         <div className={styles.description} >
                             <div className={styles.title}>{proj.title} - {date.getFullYear()}</div>
                             <div className={styles.details}>{proj.details}</div>
                             <div key="links" className={styles.links}>{links}</div>
+                            <ul>
+                                {proj.specific.map((item) => <li>{item}</li>)}
+                            </ul>
                         </div>
-                        <ul>
-                            {proj.specific.map((item) => <li>{item}</li>)}
-                        </ul>
+                        <div className={styles.image} >
+                            <img src={imageLink} hidden={!imageLink} alt="" className={styles.background} />
+                        </div>
                     </div>
                 </motion.div>
             </div>)
