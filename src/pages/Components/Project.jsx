@@ -1,6 +1,6 @@
 import styles from './Project.module.css'
 import { motion } from "framer-motion";
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 var Project = ({ proj }) => {
     
