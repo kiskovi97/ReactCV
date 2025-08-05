@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.0e04fac2.css",
-    "main.js": "/ReactCV/static/js/main.f9594f93.js",
-    "static/js/488.ceedb8d6.chunk.js": "/ReactCV/static/js/488.ceedb8d6.chunk.js",
+    "main.css": "/ReactCV/static/css/main.6dcfde67.css",
+    "main.js": "/ReactCV/static/js/main.b74fe656.js",
+    "static/js/488.a59cf980.chunk.js": "/ReactCV/static/js/488.a59cf980.chunk.js",
     "static/media/ghostboy_gardener02Color.png": "/ReactCV/static/media/ghostboy_gardener02Color.6e53d069911bfd13c20a.png",
     "static/media/instagram.svg": "/ReactCV/static/media/instagram.78c3e341c4d09c768745059e2e70a9a1.svg",
     "static/media/github.svg": "/ReactCV/static/media/github.237cbb85b0ab3f1af1fc131e57429d91.svg",
     "index.html": "/ReactCV/index.html",
     "static/media/linkedin.svg": "/ReactCV/static/media/linkedin.ca5fed581a5dba41c6a072d7f0002b5d.svg",
-    "main.0e04fac2.css.map": "/ReactCV/static/css/main.0e04fac2.css.map",
-    "main.f9594f93.js.map": "/ReactCV/static/js/main.f9594f93.js.map",
-    "488.ceedb8d6.chunk.js.map": "/ReactCV/static/js/488.ceedb8d6.chunk.js.map"
+    "main.6dcfde67.css.map": "/ReactCV/static/css/main.6dcfde67.css.map",
+    "main.b74fe656.js.map": "/ReactCV/static/js/main.b74fe656.js.map",
+    "488.a59cf980.chunk.js.map": "/ReactCV/static/js/488.a59cf980.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e04fac2.css",
-    "static/js/main.f9594f93.js"
+    "static/css/main.6dcfde67.css",
+    "static/js/main.b74fe656.js"
   ]
 }
