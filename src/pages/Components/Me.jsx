@@ -21,7 +21,7 @@ var Me = () =>
                 <a href="mailto:kiskovi97@gmail.com">kiskovi97@gmail.com</a>
             </div>
             <div className={styles.logos}>
-                <a href="https://www.linkedin.com/in/gergo-kovacs-35215b154/" className={styles.minilogo}><img src={linekdin} alt="" /></a>
+                <a href="https://www.linkedin.com/in/kiskovi97/" className={styles.minilogo}><img src={linekdin} alt="" /></a>
                 <a href="https://github.com/kiskovi97" className={styles.minilogo}><img src={github} alt="" /></a>
                 <a href="https://www.instagram.com/kiskovi9706/" className={styles.minilogo}><img src={insta} alt="" /></a>
             </div>
